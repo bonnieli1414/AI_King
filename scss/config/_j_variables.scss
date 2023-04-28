@@ -1,0 +1,88 @@
+// 斷點(參考bootstrap5規格)
+$desktop-width: 992px;
+$pad-width: 767px; //ipad最小尺寸為768
+$mobile-width: 576px;
+
+// 客製RWD:桌機尺寸
+@mixin desktop {
+    @media screen and (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+// 客製RWD:平板尺寸
+@mixin pad {
+    @media screen and (max-width: $pad-width) {
+        @content;
+    }
+}
+
+// 客製RWD:手機尺寸
+@mixin mobile {
+    @media screen and (max-width: $pad-width) {
+        @content;
+    }
+}
+
+// 變數設置
+$baseSize: 12px; //基本字型大小
+$sizeLevel: 2px; //基本字型大小的補償值
+$paddingLevel: 1.2; //行高設定
+
+// 圖片樣式
+%all-img {
+    max-width: 100%; //防止產生X軸
+    height: auto;
+    vertical-align: middle; //垂直置中，清除多餘的空白處
+    object-fit: cover; //使圖片不變形
+}
+
+// a標籤樣式
+%all-a {
+    display: block; //增加點擊範圍
+    text-decoration: none; //取消底線
+    color: inherit; //字體顏色繼承父層的屬性
+}
+
+// ul,ol標籤樣式
+%list-style-none {
+    list-style-type: none;
+    padding: 0px;
+}
+
+// 字型樣式
+%font-family {
+    font-family: Microsoft JhengHei, Apple LiGothic, sans-serif; //基本設定
+}
+
+// $level: 0 是指預設值為0
+// 建立字集
+@function font($level: 0) {
+    @if $level < 0 {
+        $level: 0;
+    }
+
+    @return calc($baseSize + $sizeLevel * round($level));
+    //   12px   +   2 * 倍數 
+}
+
+// 行高
+@function rhythm($size) {
+    @return ceil(calc($size * $paddingLevel));
+    //   12px   *   1.2倍高
+}
+
+// 建立字集和行高
+@mixin font($level: 1, $line-height: auto) {
+    $size: font($level);
+    $line: rhythm($size);
+    font-size: $size;
+
+    @if $line-height ==auto {
+        line-height: $line;
+    }
+
+    @else {
+        line-height: $line-height;
+    }
+}

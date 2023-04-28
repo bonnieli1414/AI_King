@@ -1,0 +1,27 @@
+main {
+    width: 67%;
+    padding: 1rem;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+aside {
+    width: 33%;
+    padding: 1rem;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.text {
+    padding: 0px 3rem;
+}
+
+.text-center-sm {
+    @include mobile {
+        text-align: center;
+    }
+}

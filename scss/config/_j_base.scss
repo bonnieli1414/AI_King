@@ -1,0 +1,61 @@
+/* 全域 border box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    @extend %all-img;
+}
+
+a {
+    @extend %all-a;
+}
+
+ol,ul {
+    @extend %list-style-none;
+}
+
+body {
+    @extend %font-family;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop {
+        max-width: $desktop-width;
+    }
+    @include pad {
+        max-width: $pad-width;
+    }
+    @include mobile {
+        max-width: $mobile-width;
+    }
+}
+.ft-1 {
+    @include font(7);
+}
+.ft-2 {
+    @include font(6);
+}
+.ft-3 {
+    @include font(5);
+}
+.ft-4 {
+    @include font(4);
+}
+.ft-5 {
+    @include font(3);
+}
+.ft-6 {
+    @include font(2);
+}
+.ft-7 {
+    @include font(1);
+}
+.ft-8 {
+    @include font(0);
+}

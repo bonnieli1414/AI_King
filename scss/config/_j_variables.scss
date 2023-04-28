@@ -44,15 +44,15 @@ $paddingLevel: 1.2; //行高設定
     color: inherit; //字體顏色繼承父層的屬性
 }
 
-// ul,ol標籤樣式
-%list-style-none {
-    list-style-type: none;
-    padding: 0px;
-}
-
 // 字型樣式
 %font-family {
     font-family: Microsoft JhengHei, Apple LiGothic, sans-serif; //基本設定
+}
+
+// 只有置中圖片語法
+%img-center {
+    display: block;
+    margin: 0 auto;
 }
 
 // $level: 0 是指預設值為0

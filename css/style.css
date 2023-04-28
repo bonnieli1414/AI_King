@@ -326,24 +326,52 @@ a {
   color: inherit;
 }
 
-ol, ul {
-  list-style-type: none;
-  padding: 0px;
-}
-
 body {
   font-family: Microsoft JhengHei, Apple LiGothic, sans-serif;
 }
 
+.card-group .card img {
+  display: block;
+  margin: 0 auto;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* 全域 border box */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 .container {
+  padding: 0px 16px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,11 +386,13 @@ body {
 }
 @media screen and (max-width: 767px) {
   .container {
+    padding: 0px 12px;
     max-width: 767px;
   }
 }
 @media screen and (max-width: 767px) {
   .container {
+    padding: 0px 10px;
     max-width: 576px;
   }
 }
@@ -407,32 +437,112 @@ body {
   line-height: 15px;
 }
 
-main {
-  width: 67%;
+.banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 100px 10px;
+  color: #fff;
+}
+
+header .header-top {
+  background: #f0f8ff;
+}
+header .header-top .container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-top .container a {
+  padding: 4px;
+}
+header .logo-fb {
+  color: #3578e5;
+}
+header .logo-fb:active {
+  color: red;
+}
+header .logo-twitter {
+  color: #00bfff;
+}
+header .logo-twitter:active {
+  color: red;
+}
+header .header .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav > ul a {
+  color: #2bbd7e;
+  padding: 4px;
+}
+header nav > ul a:hover {
+  color: red;
+}
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
   padding: 1rem;
 }
 @media screen and (max-width: 767px) {
-  main {
-    width: 100%;
+  .card-group {
+    display: block;
   }
 }
-
-aside {
-  width: 33%;
-  padding: 1rem;
+.card-group .card {
+  border: 1px solid #000;
+  margin: 8px;
 }
-@media screen and (max-width: 767px) {
-  aside {
-    width: 100%;
-  }
+.card-group .card h2 {
+  text-align: center;
 }
-
-.text {
-  padding: 0px 3rem;
+.card-group .card p {
+  padding: 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .text-center-sm {
-    text-align: center;
-  }
+.table h2 {
+  text-align: center;
+  padding: 12px 0px;
+}
+.table table {
+  border-top: 1px solid #000;
+  margin: 0 auto;
+}
+.table tr {
+  border-bottom: 1px solid #000;
+}
+.table td {
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #d3d3d3;
 }

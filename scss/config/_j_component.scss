@@ -1,0 +1,7 @@
+// 圖片設為背景，作banner用
+@mixin banner($imgUrl) {
+    background-image: url($imgUrl);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

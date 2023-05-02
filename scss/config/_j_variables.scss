@@ -19,22 +19,23 @@ $mobile-width: 576px;
 
 // 客製RWD:手機尺寸
 @mixin mobile {
-    @media screen and (max-width: $pad-width) {
+    @media screen and (max-width: $mobile-width) {
         @content;
     }
 }
-
-// 變數設置
-$baseSize: 12px; //基本字型大小
-$sizeLevel: 2px; //基本字型大小的補償值
-$paddingLevel: 1.2; //行高設定
 
 // 圖片樣式
 %all-img {
     max-width: 100%; //防止產生X軸
     height: auto;
-    vertical-align: middle; //垂直置中，清除多餘的空白處
+    vertical-align: middle; //垂直置中，清除多餘的空白處，僅適用於行內標籤
     object-fit: cover; //使圖片不變形
+}
+
+// 圖片置中
+%img-center {
+    display: block;
+    margin: 0 auto;
 }
 
 // a標籤樣式
@@ -44,16 +45,22 @@ $paddingLevel: 1.2; //行高設定
     color: inherit; //字體顏色繼承父層的屬性
 }
 
+// 用於變更bootstrap的card-body設定
+// 讓card-body不要自適應高度變更高度位置
+%bs-card-body {
+    flex: 0 1 auto; // flex-grow、flex-shrink 和 flex-basis 三個子屬性，
+    // 初始值為 0 1 auto，即不會延展（flex-grow: 0）、縮小（flex-shrink: 1），初始寬度為元素內容的大小（flex-basis: auto）。
+}
+
 // 字型樣式
 %font-family {
     font-family: Microsoft JhengHei, Apple LiGothic, sans-serif; //基本設定
 }
 
-// 只有置中圖片語法
-%img-center {
-    display: block;
-    margin: 0 auto;
-}
+// 變數設置
+$baseSize: 12px; //基本字型大小
+$sizeLevel: 2px; //基本字型大小的補償值
+$paddingLevel: 1.2; //行高設定
 
 // $level: 0 是指預設值為0
 // 建立字集

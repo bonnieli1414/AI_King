@@ -55,27 +55,59 @@ body {
         max-width: $mobile-width;
     }
 }
-.ft-1 {
-    @include font(7);
+
+.fz-1 {
+    @include font(18); //48px
 }
-.ft-2 {
-    @include font(6);
+.fz-2 {
+    @include font(14); //40px
 }
-.ft-3 {
-    @include font(5);
+.fz-3 {
+    @include font(10); //32px
 }
-.ft-4 {
-    @include font(4);
+.fz-4 {
+    @include font(8); //28px
 }
-.ft-5 {
-    @include font(3);
+.fz-5 {
+    @include font(6); //24px
 }
-.ft-6 {
-    @include font(2);
+.fz-6 {
+    @include font(4); //20px
 }
-.ft-7 {
-    @include font(1);
+.fz-7 {
+    @include font(2); //16px
 }
-.ft-8 {
-    @include font(0);
+.fz-8 {
+    @include font(1); //14px
+}
+.fz-9 {
+    @include font(0); //12px
+}
+
+h1 {
+    @include font(18,900); //48px
+}
+h2 {
+    @include font(14,900); //40px
+}
+h3 {
+    @include font(10,900); //32px
+}
+h4 {
+    @include font(8,900); //28px
+}
+h5 {
+    @include font(6,900); //24px
+}
+h6 {
+    @include font(4,900); //20px
+}
+h7 {
+    @include font(2,900); //16px
+}
+h8 {
+    @include font(1,900); //14px
+}
+h9 {
+    @include font(0,900); //12px
 }

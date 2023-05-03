@@ -79,17 +79,34 @@ $paddingLevel: 1.2; //行高設定
     //   12px   *   1.2倍高
 }
 
-// 建立字集和行高
-@mixin font($level: 1, $line-height: auto) {
+// 字重
+@function weight($weight: 400) {
+    @if $weight < 400 {
+        $weight: 400;
+    }
+    @return $weight;
+    //   400
+}
+
+// 建立字集和行高和字重
+@mixin font($level: 1, $font-weight: auto, $font-weight: auto) {
     $size: font($level);
     $line: rhythm($size);
+    $weight: weight($weight);
+
     font-size: $size;
 
-    @if $line-height ==auto {
+    @if $line-height == auto {
         line-height: $line;
     }
-
     @else {
         line-height: $line-height;
+    }
+
+    @if $font-weight == auto {
+        font-weight: $weight;
+    }
+    @else {
+        font-weight: $font-weight;
     }
 }

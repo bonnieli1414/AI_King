@@ -36,17 +36,25 @@ body {
 .fz-6 {
     @include font(4); //20px
 }
-.fz-sm {
+p {
     @include font(2); //16px
 }
-.fz-md {
+.p-md {
     @include font(1); //14px
 }
-.fz-lg {
+.p-sm {
     @include font(0); //12px
 }
-
-h1 {
+.title-sm {
+    @include font(34); //80px
+}
+.title-md {
+    @include font(54); //120px
+}
+.title-lg {
+    @include font(74); //160px
+}
+.h1 {
     @include font(18,900); //48px
 }
 h2 {
@@ -64,14 +72,23 @@ h5 {
 h6 {
     @include font(4,900); //20px
 }
-.fb-lg {
-    @include font(2,900); //16px
+.p-bold {
+    @include font(2,700); //16px
 }
-.fb-md {
-    @include font(1,900); //14px
+.p-bold-md {
+    @include font(1,700); //14px
 }
-.fb-sm {
-    @include font(0,900); //12px
+.p-bold-sm {
+    @include font(0,700); //12px
+}
+.title-sm {
+    @include font(34,900); //80px
+}
+.title-md {
+    @include font(54,900); //120px
+}
+.title-lg {
+    @include font(74,900); //160px
 }
 
 

@@ -64,19 +64,21 @@ $paddingLevel: 1.2; //行高設定
 }
 
 // 字重
-@function weight($weight: 400) {
-    @if $weight < 400 {
-        $weight: 400;
+@function boldness($bold) {
+    @if $bold == auto or $bold < 0 {
+        $bold: 400;
     }
-    @return $weight;
-    //   400
+
+    @return round($bold);
+    //   12px   +   2 * 倍數 
 }
 
+
 // 建立字集、行高和字重組合
-@mixin font($level: 1, $font-weight: auto, $font-weight: auto) {
+@mixin font($level: 1, $font-weight: auto, $line-height: auto) {
     $size: font($level);
     $line: rhythm($size);
-    $weight: weight($weight);
+    $weight: boldness($font-weight);
 
     font-size: $size;
 

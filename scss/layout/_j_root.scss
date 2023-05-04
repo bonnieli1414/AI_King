@@ -17,6 +17,7 @@ body {
         max-width: $pad-width;
     }
     @include mobile {
+        padding: 0px 12px;
         max-width: $mobile-width;
     }
 }
@@ -104,9 +105,26 @@ button {
         color: $black-2;
     }
 }
+.button-light {
+    background: $white;
+    color: $black-2;
+    padding: 20px 40px;
+    border: 1px solid $white;
+    border-radius: 16px;
+    &:hover {
+        background: $black-2;
+        color: $white;
+    }
+}
 .ms-118 {
     margin-left: 118px;
 }
 .me-118 {
     margin-right: 118px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.pe-14 {
+    padding-right: 14px;
 }

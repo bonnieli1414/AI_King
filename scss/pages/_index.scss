@@ -1,4 +1,8 @@
 .section0 {
+    .hero {
+        margin-top: 40px;
+    }
+
     button {
         margin-top: 40px;
         margin-bottom: 100px;
@@ -28,13 +32,11 @@
     }
 
     .card-group {
-        width: 100%;
-        display: flex;
         justify-content: space-between;
         margin-top: 80px;
         gap: 24px;
 
-        .card {
+        .card-item {
             padding: 80px 40px;
             border: 1px solid $black-3;
             border-radius: 16px;
@@ -76,7 +78,6 @@
     }
 
     .card {
-        flex: 1;
         padding: 40px;
         background: rgba(255, 255, 255, 0.08);
         box-shadow: 0px 100px 80px rgba(18, 18, 18, 0.07), 0px 41.7776px 33.4221px rgba(18, 18, 18, 0.0503198), 0px 22.3363px 17.869px rgba(18, 18, 18, 0.0417275), 0px 12.5216px 10.0172px rgba(18, 18, 18, 0.035), 0px 6.6501px 5.32008px rgba(18, 18, 18, 0.0282725), 0px 2.76726px 2.21381px rgba(18, 18, 18, 0.0196802);
@@ -117,30 +118,102 @@
         margin-bottom: 80px;
     }
 
+    input {
+        width: 100%;
+        background: $black-6;
+        padding: 20px 0px 20px 76px;
+        border-radius: 16px;
+        border: 1px solid $white;
+
+        &:focus {
+            @include input-focus;
+        }
+    }
+
     .search-bar {
         position: relative;
     }
 
-    img {
-        color: #000;
-        width: 18px;
-        height: 18px;
-
-    }
-
     .search {
+        @include mask("../../images/icons/search.png", $black-4, 18px);
         position: absolute;
         top: 50%;
         left: 43px;
         transform: translateY(-9px);
     }
 
-    input {
-        width: 100%;
-        padding: 20px 0px 20px 76px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            border: 1px solid $black-6;
+            margin: 24px 0px 40px 0px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+            &:hover .mask-filter {
+                @include mask("../../images/icons/filter.png", $white, 10px)
+            }
+
+            &:hover .mask-order {
+                @include mask("../../images/icons/keyboard arrow down.png", $white, 10px)
+            }
+        }
+
+        .mask-filter {
+            @include mask("../../images/icons/filter.png", $black-1 , 10px)
+        }
+
+        .mask-order {
+            width: 10px;
+            height: 10px;
+            @include mask("../../images/icons/keyboard arrow down.png", $black-1, 10px)
+        }
+
+        .list {
+            display: flex;
+
+            a {
+                padding: 8px 16px;
+                color: $black-4;
+            }
+
+            a:hover {
+                color: $black-1;
+                font-weight: boldness(700);
+                background-color: $black-6;
+                border-radius: 16px;
+            }
+        }
     }
 
-    .list {
+    .card-group {
+        justify-content: space-between;
+    }
+
+    .card {
+        border: 1px solid $black-6;
+        border-radius: 16px;
+    }
+
+    .card-text {
+        padding: 12px 32px;
+
+        p {
+            color: $black-3;
+        }
+    }
+
+    .card-footer {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            border-top: 1px solid $black-6;
+            padding: 10px 32px;
+        }
     }
 }

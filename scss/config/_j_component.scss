@@ -1,7 +1,70 @@
-// 圖片設為背景，作banner用
+// 圖片設定為背景當banner用途
 @mixin banner($imgUrl) {
+    // 需自行設定長寬
     background-image: url($imgUrl);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+// 圖片設為背景，使用遮罩填色
+@mixin mask($imgUrl, $color, $size:30px) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    // 在 Chrome 與 Safari 上使用必須加上前綴 -webkit-
+    -webkit-mask: url($imgUrl) no-repeat center center;
+    mask: url($imgUrl) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+// input的focus效果
+@mixin input-focus($color:#03a9f4) {
+    outline: none;
+    border-style: solid;
+    border-color: $color;
+    box-shadow: 0 0 15px $color;
+}
+
+// 每張卡片高度設定等高
+@mixin cardHeightIsSame {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .card {
+        // 子元素寬度各佔33.33%
+        // - 20px產生gap:10px
+        flex-basis: calc(33.33% - 20px);
+        // flex-grow: 1; //此設定是讓寬度可以自適應寬度瑱滿
+
+        @include pad {
+            flex-basis: calc(50% - 20px);
+        }
+
+        @include mobile {
+            flex-basis: calc(100% - 20px);
+        }
+    }
+}
+
+// 每張卡片內的內文高度設定等高
+@mixin cardTextHeightIsSame {
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .card-text {
+        flex-grow: 1;
+    }
+}
+
+.card-group {
+    @include cardHeightIsSame;
+    @include cardTextHeightIsSame;
 }

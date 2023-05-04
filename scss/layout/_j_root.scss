@@ -1,14 +1,18 @@
 body {
     @extend %font-family;
-    background: #1E1E1E;
+    font-family: Noto Sans TC;
+    background: $black-1;
+    color: $white;
 }
 
 .container {
-    max-width: $desktop-width;
+    max-width: 1296px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 16px;
+    @include desktop {
+        max-width: $desktop-width;
+    }
     @include pad {
         max-width: $pad-width;
     }
@@ -16,7 +20,6 @@ body {
         max-width: $mobile-width;
     }
 }
-
 
 .fz-1 {
     @include font(18); //48px
@@ -81,14 +84,29 @@ h6 {
 .p-bold-sm {
     @include font(0,700); //12px
 }
-.title-sm {
+.title-bold-sm {
     @include font(34,900); //80px
 }
-.title-md {
+.title-bold-md {
     @include font(54,900); //120px
 }
-.title-lg {
+.title-bold-lg {
     @include font(74,900); //160px
 }
-
-
+button {
+    background: $black-2;
+    color: $white;
+    padding: 20px 40px;
+    border: 1px solid $white;
+    border-radius: 16px;
+    &:hover {
+        background: $white;
+        color: $black-2;
+    }
+}
+.ms-118 {
+    margin-left: 118px;
+}
+.me-118 {
+    margin-right: 118px;
+}

@@ -1,0 +1,15 @@
+header {
+    .container {
+        padding: 20px 0px;
+        gap: 14px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $white;
+    }
+    ul {
+        display: flex;
+        li {
+            padding: 28px 10px;
+        }
+    }
+}

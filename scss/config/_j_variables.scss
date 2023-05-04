@@ -1,48 +1,32 @@
 // 斷點(參考bootstrap5規格)
-$desktop-width: 992px;
-$pad-width: 767px; //ipad最小尺寸為768
-$mobile-width: 576px;
+$desktop-breakpoints: 992px;
+$pad-breakpoints: 767px; //ipad最小尺寸為768
+$mobile-breakpoints: 576px;
+
+// 容器
+$desktop-width: 960px;
+$pad-width: 720px; //ipad最小尺寸為768
+$mobile-width: 	540px;
 
 // 客製RWD:桌機尺寸
 @mixin desktop {
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: $desktop-breakpoints) {
         @content;
     }
 }
 
 // 客製RWD:平板尺寸
 @mixin pad {
-    @media screen and (max-width: $pad-width) {
+    @media screen and (max-width: $pad-breakpoints) {
         @content;
     }
 }
 
 // 客製RWD:手機尺寸
 @mixin mobile {
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: $mobile-breakpoints) {
         @content;
     }
-}
-
-// 圖片樣式
-%all-img {
-    max-width: 100%; //防止產生X軸
-    height: auto;
-    vertical-align: middle; //垂直置中，清除多餘的空白處，僅適用於行內標籤
-    object-fit: cover; //使圖片不變形
-}
-
-// 圖片置中
-%img-center {
-    display: block;
-    margin: 0 auto;
-}
-
-// a標籤樣式
-%all-a {
-    display: block; //增加點擊範圍
-    text-decoration: none; //取消底線
-    color: inherit; //字體顏色繼承父層的屬性
 }
 
 // 用於變更bootstrap的card-body設定
@@ -88,7 +72,7 @@ $paddingLevel: 1.2; //行高設定
     //   400
 }
 
-// 建立字集和行高和字重
+// 建立字集、行高和字重組合
 @mixin font($level: 1, $font-weight: auto, $font-weight: auto) {
     $size: font($level);
     $line: rhythm($size);
@@ -110,3 +94,12 @@ $paddingLevel: 1.2; //行高設定
         font-weight: $font-weight;
     }
 }
+
+// 主色、輔色
+$black-100: #020202;
+$black-80: #525252;
+$black-60: #919191;
+$black-40: #D1D1D1;
+$black-20: #F2F2F2;
+$white: #FFFFFF;
+$primary-color: #F18724;

@@ -27,87 +27,21 @@ ol,ul {
     list-style-type: none;
 }
 img {
-    @extend %all-img;
+    max-width: 100%; //防止產生X軸
+    height: auto;
+    vertical-align: middle; //垂直置中，清除多餘的空白處，僅適用於行內標籤
+    object-fit: cover; //使圖片不變形
+}
+// 圖片置中
+.img-center {
+    display: block;
+    margin: 0 auto;
 }
 a {
-    @extend %all-a;
+    display: block; //增加點擊範圍
+    text-decoration: none; //取消底線
+    color: inherit; //字體顏色繼承父層的屬性
     &:hover {
         opacity: 0.8;
     }
-}
-body {
-    @extend %font-family;
-}
-.container {
-    padding: 0px 16px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    @include desktop {
-        max-width: $desktop-width;
-    }
-    @include pad {
-        padding: 0px 12px;
-        max-width: $pad-width;
-    }
-    @include mobile {
-        padding: 0px 10px;
-        max-width: $mobile-width;
-    }
-}
-
-.fz-1 {
-    @include font(18); //48px
-}
-.fz-2 {
-    @include font(14); //40px
-}
-.fz-3 {
-    @include font(10); //32px
-}
-.fz-4 {
-    @include font(8); //28px
-}
-.fz-5 {
-    @include font(6); //24px
-}
-.fz-6 {
-    @include font(4); //20px
-}
-.fz-7 {
-    @include font(2); //16px
-}
-.fz-8 {
-    @include font(1); //14px
-}
-.fz-9 {
-    @include font(0); //12px
-}
-
-h1 {
-    @include font(18,900); //48px
-}
-h2 {
-    @include font(14,900); //40px
-}
-h3 {
-    @include font(10,900); //32px
-}
-h4 {
-    @include font(8,900); //28px
-}
-h5 {
-    @include font(6,900); //24px
-}
-h6 {
-    @include font(4,900); //20px
-}
-h7 {
-    @include font(2,900); //16px
-}
-h8 {
-    @include font(1,900); //14px
-}
-h9 {
-    @include font(0,900); //12px
 }

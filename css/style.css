@@ -351,9 +351,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 100%;
 }
 .card-group .card-text {
@@ -883,8 +880,6 @@ header ul li {
   margin-top: 40px;
 }
 .section5 .card-img {
-  max-width: 416px;
-  height: 312px;
   border-radius: 16px 16px 0px 0px;
 }
 .section5 .card-text {

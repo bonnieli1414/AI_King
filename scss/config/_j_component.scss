@@ -1,3 +1,83 @@
+// 客製漢堡選單
+@mixin ham-menu {
+
+    // 先製作 ham-menu 作相對定位
+    .ham-menu {
+        width: 48px;
+        height: 48px;
+        display: block;
+        position: relative;
+    }
+
+    // 製作 ham-menu 外框作絕對定位
+    .ham-frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    // 製作 ham-menu 三根技巧
+    .ham-bar {
+        height: 2px;
+        width: 26px;
+        background-color: var(--bs-light);
+        position: absolute;
+        transition: all 0.3s;
+    }
+
+    .ham-bar--top {
+        transform: translateY(-6px);
+    }
+
+    .ham-bar--bottom {
+        transform: translateY(6px);
+    }
+
+    // 製作 ham-menu checked後圖形變成打叉圖示
+    .ham-toggle:checked~.ham-menu .ham-frame .ham-bar--middle {
+        opacity: 0;
+    }
+
+    .ham-toggle:checked~.ham-menu .ham-frame .ham-bar--top {
+        transform: rotate(-45deg);
+    }
+
+    .ham-toggle:checked~.ham-menu .ham-frame .ham-bar--bottom {
+        transform: rotate(45deg);
+    }
+
+    // 客製側邊欄(右邊)
+    .offcanvas-right {
+        color: #fff;
+        background-color: #020912e6;
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        left: 0;
+        transition: margin-left 0.5s;
+        margin-left: -120vh;
+
+        a {
+            width: 100vh;
+        }
+    }
+
+    .ham-toggle:checked~.offcanvas-right {
+        margin-left: 0px;
+    }
+}
+
+// 針對h1標籤為圖片，設置隱藏文字，優化圖片SEO
+@mixin visual-hidden {
+    position: absolute;
+    // 首行縮排設滿
+    text-indent: 100%;
+    // 不換行
+    white-space: nowrap;
+    // 超過後隱藏
+    overflow: hidden;
+}
+
 // 圖片設定為背景當banner用途
 @mixin banner($imgUrl) {
     // 需自行設定長寬
@@ -8,7 +88,7 @@
 }
 
 // 圖片設為背景，使用遮罩填色
-@mixin mask($imgUrl, $color, $size:30px) {
+@mixin mask($imgUrl, $color, $size: 30px) {
     width: $size;
     height: $size;
     background-color: $color;
@@ -20,7 +100,7 @@
 }
 
 // input的focus效果
-@mixin input-focus($color:#03a9f4) {
+@mixin input-focus($color: #03a9f4) {
     outline: none;
     border-style: solid;
     border-color: $color;

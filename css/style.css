@@ -647,6 +647,12 @@ header ul {
 header ul li {
   padding: 28px 10px;
 }
+header h1 {
+  position: absolute;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 footer {
   padding: 32px 0px;

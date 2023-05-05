@@ -908,8 +908,8 @@ header ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 1px solid #F2F2F2;
 }
 .section5 .card-footer li {
-  border-top: 1px solid #F2F2F2;
   padding: 10px 32px;
 }

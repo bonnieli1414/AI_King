@@ -219,9 +219,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-top: 1px solid $black-6;
 
         li {
-            border-top: 1px solid $black-6;
             padding: 10px 32px;
         }
     }

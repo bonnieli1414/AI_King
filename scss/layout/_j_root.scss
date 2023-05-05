@@ -6,14 +6,17 @@ body {
 }
 
 .container {
-    max-width: 1296px;
+    max-width: 1396px; //設計稿1296+50padding
+    padding: 0 50px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     @include desktop {
+        padding: 0px 30px;
         max-width: $desktop-width;
     }
     @include pad {
+        padding: 0px 20px;
         max-width: $pad-width;
     }
     @include mobile {

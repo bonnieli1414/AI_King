@@ -6,7 +6,7 @@ $mobile-breakpoints: 576px;
 // 容器
 $desktop-width: 960px;
 $pad-width: 720px; //ipad最小尺寸為768
-$mobile-width: 	540px;
+$mobile-width: 	100%;
 
 // 客製RWD:桌機尺寸
 @mixin desktop {

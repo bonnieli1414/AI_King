@@ -149,7 +149,7 @@
 
         button {
             border: 1px solid $black-6;
-            margin: 24px 0px 40px 0px;
+            margin-top: 24px;
             text-align: center;
             display: flex;
             align-items: center;
@@ -195,8 +195,16 @@
     }
 
     .card {
+        width: 33.33%;
         border: 1px solid $black-6;
         border-radius: 16px;
+        margin-top: 40px;
+    }
+
+    .card-img {
+        max-width: 416px;
+        height: 312px;
+        border-radius: 16px 16px 0px 0px;
     }
 
     .card-text {
@@ -211,6 +219,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         li {
             border-top: 1px solid $black-6;
             padding: 10px 32px;

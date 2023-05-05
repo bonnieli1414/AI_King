@@ -814,7 +814,7 @@ header ul li {
 }
 .section5 .navbar button {
   border: 1px solid #F2F2F2;
-  margin: 24px 0px 40px 0px;
+  margin-top: 24px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,8 +882,15 @@ header ul li {
           justify-content: space-between;
 }
 .section5 .card {
+  width: 33.33%;
   border: 1px solid #F2F2F2;
   border-radius: 16px;
+  margin-top: 40px;
+}
+.section5 .card-img {
+  max-width: 416px;
+  height: 312px;
+  border-radius: 16px 16px 0px 0px;
 }
 .section5 .card-text {
   padding: 12px 32px;

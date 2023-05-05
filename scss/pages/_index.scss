@@ -84,14 +84,6 @@
         border-radius: 16px;
     }
 
-    .card-header {
-        li {
-            display: inline;
-            margin-top: 41px;
-            margin-bottom: 22px;
-        }
-    }
-
     .card-text {
         margin: 22px 0px;
     }
@@ -143,13 +135,13 @@
     }
 
     .navbar {
+        margin-top: 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         button {
             border: 1px solid $black-6;
-            margin-top: 24px;
             text-align: center;
             display: flex;
             align-items: center;

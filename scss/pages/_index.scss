@@ -215,4 +215,79 @@
             padding: 10px 32px;
         }
     }
+
+    .pagination {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 40px;
+
+        a {
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            vertical-align: middle;
+
+            &:hover {
+                color: $white;
+                background: $black-1;
+                border-radius: 16px;
+            }
+
+            &:hover .arrow-right {
+                @include mask("../../images/icons/keyboard arrow right.png", $white, 8px);
+            }
+        }
+
+        .arrow-right-a {
+            position: relative;
+        }
+
+        .arrow-right {
+            @include mask("../../images/icons/keyboard arrow right.png", $black-1, 8px);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+
+    }
+}
+
+.section6 {
+
+    .h1 {
+        text-align: center;
+        margin-top: 158px;
+    }
+
+    .slogan {
+        width: 188px;
+        text-align: center;
+        margin: 40px auto 160px auto;
+        padding: 20px 0px;
+        border: 1px solid $white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        h6 {
+            display: inline;
+        }
+
+        img {
+            margin-left: 16px;
+        }
+
+    }
+
+    .container {
+        justify-content: space-between;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: 80px 0px;
+    }
 }

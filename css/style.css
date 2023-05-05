@@ -648,6 +648,27 @@ header ul li {
   padding: 28px 10px;
 }
 
+footer {
+  padding: 32px 0px;
+}
+footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .society {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+footer .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+
 .section0 .hero {
   margin-top: 40px;
 }
@@ -902,4 +923,88 @@ header ul li {
 }
 .section5 .card-footer li {
   padding: 10px 32px;
+}
+.section5 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+.section5 .pagination a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+}
+.section5 .pagination a:hover {
+  color: #FFFFFF;
+  background: #020202;
+  border-radius: 16px;
+}
+.section5 .pagination a:hover .arrow-right {
+  width: 8px;
+  height: 8px;
+  background-color: #FFFFFF;
+  -webkit-mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.section5 .pagination .arrow-right-a {
+  position: relative;
+}
+.section5 .pagination .arrow-right {
+  width: 8px;
+  height: 8px;
+  background-color: #020202;
+  -webkit-mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.section6 .h1 {
+  text-align: center;
+  margin-top: 158px;
+}
+.section6 .slogan {
+  width: 188px;
+  text-align: center;
+  margin: 40px auto 160px auto;
+  padding: 20px 0px;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section6 .slogan h6 {
+  display: inline;
+}
+.section6 .slogan img {
+  margin-left: 16px;
+}
+.section6 .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 80px 0px;
 }

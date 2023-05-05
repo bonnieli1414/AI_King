@@ -1,4 +1,9 @@
 header {
+    position: fixed;
+    width: 100%;
+    background: $black-1;
+    z-index: 9999;
+
     .container {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -8,8 +13,12 @@ header {
         border-bottom: 1px solid $white;
     }
 
-    ul {
+    .menu-desktop {
         display: flex;
+
+        @include pad {
+            display: none;
+        }
 
         li {
             padding: 28px 10px;
@@ -18,5 +27,45 @@ header {
 
     h1 {
         @include visual-hidden;
+    }
+
+    // 響應式設置：手機或pad版時引入ham-menu
+    nav {
+        @include pad {
+            @include ham-menu;
+        }
+    }
+
+    .offcanvas-right {
+        display: none;
+        padding: 0;
+
+        @include pad {
+            display: block;
+            width: 100vw;
+        }
+    }
+
+    .offcanvas-body {
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            width: 100%;
+        }
+    }
+
+    .offcanvas-footer {
+        width: 100vw;
+        padding: 12px;
+        border-top: 1px solid $white;
+    }
+
+    .society {
+        display: flex;
+        gap: 20px;
+        padding-top: 36px;
     }
 }

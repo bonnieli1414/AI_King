@@ -15,14 +15,47 @@
         <div class="container">
             <a href="#" class="logo">
                 <img src="./images/header/Union.png">
-                <img src="./images/header/AI_tool_king.png" alt="AI工具王"><h1>AI工具王</h1>
+                <img src="./images/header/AI_tool_king.png" alt="AI工具王">
+                <h1>AI工具王</h1>
             </a>
+
+            <!-- 漢堡選單開始 -->
             <nav>
-                <ul>
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">定價</a></li>
+                <input id="nav-toggle" class="ham-toggle d-none" type="checkbox">
+                <label for="nav-toggle" class="ham-menu">
+                    <div class="ham-frame">
+                        <div class="ham-bar ham-bar--top"></div>
+                        <div class="ham-bar ham-bar--middle"></div>
+                        <div class="ham-bar ham-bar--bottom"></div>
+                    </div>
+                </label>
+                <!-- 側邊欄開始 -->
+                <ul class="offcanvas-right">
+                    <div class="offcanvas-body title-bold-sm">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">定價</a></li>
+                        </ul>
+                    </div>
+                    <ul class="offcanvas-footer">
+                        <li class="copyright">AI工具王 © 2023</li>
+                        <li>
+                            <ul class="society">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </ul>
+                <!-- 側邊欄結束 -->
             </nav>
+            <!-- 漢堡選單結束 -->
+
+            <ul class="menu-desktop">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">定價</a></li>
+            </ul>
         </div>
     </header>
     <!-- header結束 -->

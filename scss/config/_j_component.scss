@@ -20,7 +20,7 @@
     .ham-bar {
         height: 2px;
         width: 26px;
-        background-color: var(--bs-light);
+        background-color: $white;
         position: absolute;
         transition: all 0.3s;
     }
@@ -46,20 +46,22 @@
         transform: rotate(45deg);
     }
 
+    #nav-toggle {
+        display: none;
+    }
+
     // 客製側邊欄(右邊)
     .offcanvas-right {
-        color: #fff;
-        background-color: #020912e6;
+        //由內層的offcanvas-body設定寬度才可滿版
+        // width: 100vh;
+        color: $white;
+        background-color: $black-1;
         position: fixed;
-        top: 62px;
+        top: 88.67px;
         bottom: 0;
         left: 0;
         transition: margin-left 0.5s;
-        margin-left: -120vh;
-
-        a {
-            width: 100vh;
-        }
+        margin-left: -230vh;
     }
 
     .ham-toggle:checked~.offcanvas-right {

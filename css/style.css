@@ -631,6 +631,16 @@ button:hover {
   padding-right: 14px;
 }
 
+.d-none {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: #020202;
+  z-index: 9999;
+}
 header .container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -643,12 +653,17 @@ header .container {
           align-items: center;
   border-bottom: 1px solid #FFFFFF;
 }
-header ul {
+header .menu-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header ul li {
+@media screen and (max-width: 767px) {
+  header .menu-desktop {
+    display: none;
+  }
+}
+header .menu-desktop li {
   padding: 28px 10px;
 }
 header h1 {
@@ -656,6 +671,101 @@ header h1 {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  header nav .ham-menu {
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: relative;
+  }
+  header nav .ham-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  header nav .ham-bar {
+    height: 2px;
+    width: 26px;
+    background-color: #FFFFFF;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  header nav .ham-bar--top {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  header nav .ham-bar--bottom {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  header nav .ham-toggle:checked ~ .ham-menu .ham-frame .ham-bar--middle {
+    opacity: 0;
+  }
+  header nav .ham-toggle:checked ~ .ham-menu .ham-frame .ham-bar--top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header nav .ham-toggle:checked ~ .ham-menu .ham-frame .ham-bar--bottom {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header nav #nav-toggle {
+    display: none;
+  }
+  header nav .offcanvas-right {
+    color: #FFFFFF;
+    background-color: #020202;
+    position: fixed;
+    top: 88.67px;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+    margin-left: -230vh;
+  }
+  header nav .ham-toggle:checked ~ .offcanvas-right {
+    margin-left: 0px;
+  }
+}
+header .offcanvas-right {
+  display: none;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  header .offcanvas-right {
+    display: block;
+    width: 100vw;
+  }
+}
+header .offcanvas-body {
+  width: 100vw;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .offcanvas-body a {
+  width: 100%;
+}
+header .offcanvas-footer {
+  width: 100vw;
+  padding: 12px;
+  border-top: 1px solid #FFFFFF;
+}
+header .society {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-top: 36px;
 }
 
 footer {
@@ -680,7 +790,7 @@ footer .part {
 }
 
 .section0 .hero {
-  margin-top: 40px;
+  margin-top: 140px;
 }
 .section0 button {
   margin-top: 40px;
@@ -889,6 +999,11 @@ footer .part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .section5 .navbar .list {
+    display: none;
+  }
 }
 .section5 .navbar .list a {
   padding: 8px 16px;

@@ -1,6 +1,6 @@
 .section0 {
     .hero {
-        margin-top: 40px;
+        margin-top: 140px;
     }
 
     button {
@@ -168,6 +168,9 @@
 
         .list {
             display: flex;
+            @include pad {
+                display: none;
+            }
 
             a {
                 padding: 8px 16px;
@@ -251,8 +254,6 @@
             top: 20px;
             left: 20px;
         }
-
-
     }
 }
 

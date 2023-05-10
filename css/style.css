@@ -885,6 +885,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .text-mobile-center {
+    text-align: center;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;

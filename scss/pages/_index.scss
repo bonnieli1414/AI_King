@@ -13,6 +13,23 @@
     .container {
         justify-content: flex-end;
     }
+
+    .animation {
+        img {
+            width: 180px;
+            height: 180px;
+
+            @include pad {
+                width: 150px;
+                height: 150px;
+            }
+
+            @include mobile {
+                width: 117px;
+                height: 117px;
+            }
+        }
+    }
 }
 
 .section2 {
@@ -22,13 +39,24 @@
         display: flex;
         justify-content: space-between;
 
+        @include mobile {
+            display: block;
+        }
+
         .flex-1 {
             flex: 1;
+
+            h3 {
+                @include mobile {
+                    margin-bottom: 24px;
+                }
+            }
         }
 
         .flex-2 {
             flex: 2;
         }
+
     }
 
     .card-group {
@@ -36,10 +64,20 @@
         margin-top: 80px;
         gap: 24px;
 
+        .card {
+            flex-basis: calc(33.33% - 20px);
+            @include mobile {
+                flex-basis: calc(100% - 20px);
+            }
+        }
+
         .card-item {
             padding: 80px 40px;
             border: 1px solid $black-3;
             border-radius: 16px;
+            @include pad {
+                padding: 40px 20px;
+            }
 
             li {
                 max-width: 416px;
@@ -313,10 +351,19 @@
     }
 
     .container {
+        flex-direction: row-reverse;
         justify-content: space-between;
         border-top: 1px solid $white;
         border-bottom: 1px solid $white;
         padding-top: 80px;
         padding-bottom: 80px;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    .logo {
+        margin-bottom: 40px;
     }
 }

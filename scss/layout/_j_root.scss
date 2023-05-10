@@ -4,131 +4,373 @@ body {
     background: $black-1;
     color: $white;
 }
+
 .container {
     max-width: 1396px; //設計稿1296+50padding
     padding: 0 50px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+
     @include desktop {
         padding: 0px 30px;
         max-width: $desktop-width;
     }
+
     @include pad {
         padding: 0px 20px;
         max-width: $pad-width;
     }
+
     @include mobile {
         padding: 0px 12px;
         max-width: $mobile-width;
     }
 }
+
 .fz-1 {
     @include font(18); //48px
 }
+
 .fz-2 {
     @include font(14); //40px
 }
+
 .fz-3 {
     @include font(10); //32px
 }
+
 .fz-4 {
     @include font(8); //28px
 }
+
 .fz-5 {
     @include font(6); //24px
 }
+
 .fz-6 {
     @include font(4); //20px
 }
-p {
+
+.p-lg {
     @include font(2); //16px
 }
+
 .p-md {
     @include font(1); //14px
 }
+
 .p-sm {
     @include font(0); //12px
 }
+
 .title-sm {
     @include font(34); //80px
 }
+
 .title-md {
     @include font(54); //120px
 }
+
 .title-lg {
     @include font(74); //160px
 }
+
 .h1 {
-    @include font(18,900); //48px
+    @include font(18, 900); //48px
 }
+
 h2 {
-    @include font(14,900); //40px
+    @include font(14, 900); //40px
 }
+
 h3 {
-    @include font(10,900); //32px
+    @include font(10, 900); //32px
 }
+
 h4 {
-    @include font(8,900); //28px
+    @include font(8, 900); //28px
 }
+
 h5 {
-    @include font(6,900); //24px
+    @include font(6, 900); //24px
 }
+
 h6 {
-    @include font(4,900); //20px
+    @include font(4, 900); //20px
 }
+
 .p-bold {
-    @include font(2,700); //16px
+    @include font(2, 700); //16px
 }
+
 .p-bold-md {
-    @include font(1,700); //14px
+    @include font(1, 700); //14px
 }
+
 .p-bold-sm {
-    @include font(0,700); //12px
+    @include font(0, 700); //12px
 }
+
 .title-bold-sm {
-    @include font(34,900); //80px
+    @include font(34, 900); //80px
 }
+
 .title-bold-md {
-    @include font(54,900); //120px
+    @include font(54, 900); //120px
 }
+
 .title-bold-lg {
-    @include font(74,900); //160px
+    @include font(74, 900); //160px
 }
+
+// 平版版型
+@media screen and (max-width: $pad-breakpoints) {
+    .fz-pad-1 {
+        @include font(18); //48px
+    }
+
+    .fz-pad-2 {
+        @include font(14); //40px
+    }
+
+    .fz-pad-3 {
+        @include font(10); //32px
+    }
+
+    .fz-pad-4 {
+        @include font(8); //28px
+    }
+
+    .fz-pad-5 {
+        @include font(6); //24px
+    }
+
+    .fz-pad-6 {
+        @include font(4); //20px
+    }
+
+    .p-pad-lg {
+        @include font(2); //16px
+    }
+
+    .p-pad-md {
+        @include font(1); //14px
+    }
+
+    .p-pad-sm {
+        @include font(0); //12px
+    }
+
+    .title-pad-sm {
+        @include font(34); //80px
+    }
+
+    .title-pad-md {
+        @include font(54); //120px
+    }
+
+    .title-pad-lg {
+        @include font(74); //160px
+    }
+
+    .h1-pad {
+        @include font(18, 900); //48px
+    }
+
+    .h2-pad {
+        @include font(14, 900); //40px
+    }
+
+    .h3-pad {
+        @include font(10, 900); //32px
+    }
+
+    .h4-pad {
+        @include font(8, 900); //28px
+    }
+
+    .h5-pad {
+        @include font(6, 900); //24px
+    }
+
+    .h6-pad {
+        @include font(4, 900); //20px
+    }
+
+    .p-pad-bold {
+        @include font(2, 700); //16px
+    }
+
+    .p-pad-bold-md {
+        @include font(1, 700); //14px
+    }
+
+    .p-pad-bold-sm {
+        @include font(0, 700); //12px
+    }
+
+    .title-pad-bold-sm {
+        @include font(34, 900); //80px
+    }
+
+    .title-pad-bold-md {
+        @include font(54, 900); //120px
+    }
+
+    .title-pad-bold-lg {
+        @include font(74, 900); //160px
+    }
+}
+
+// 手機版型
+@media screen and (max-width: $mobile-breakpoints) {
+    .fz-mobile-1 {
+        @include font(18); //48px
+    }
+
+    .fz-mobile-2 {
+        @include font(14); //40px
+    }
+
+    .fz-mobile-3 {
+        @include font(10); //32px
+    }
+
+    .fz-mobile-4 {
+        @include font(8); //28px
+    }
+
+    .fz-mobile-5 {
+        @include font(6); //24px
+    }
+
+    .fz-mobile-6 {
+        @include font(4); //20px
+    }
+
+    .p-mobile-lg {
+        @include font(2); //16px
+    }
+
+    .p-mobile-md {
+        @include font(1); //14px
+    }
+
+    .p-mobile-sm {
+        @include font(0); //12px
+    }
+
+    .title-mobile-sm {
+        @include font(34); //80px
+    }
+
+    .title-mobile-md {
+        @include font(54); //120px
+    }
+
+    .title-mobile-lg {
+        @include font(74); //160px
+    }
+
+    .h1-mobile {
+        @include font(18, 900); //48px
+    }
+
+    .h2-mobile {
+        @include font(14, 900); //40px
+    }
+
+    .h3-mobile {
+        @include font(10, 900); //32px
+    }
+
+    .h4-mobile {
+        @include font(8, 900); //28px
+    }
+
+    .h5-mobile {
+        @include font(6, 900); //24px
+    }
+
+    .h6-mobile {
+        @include font(4, 900); //20px
+    }
+
+    .p-mobile-bold {
+        @include font(2, 700); //16px
+    }
+
+    .p-mobile-bold-md {
+        @include font(1, 700); //14px
+    }
+
+    .p-mobile-bold-sm {
+        @include font(0, 700); //12px
+    }
+
+    .title-mobile-bold-sm {
+        @include font(34, 900); //80px
+    }
+
+    .title-mobile-bold-md {
+        @include font(54, 900); //120px
+    }
+
+    .title-mobile-bold-lg {
+        @include font(74, 900); //160px
+    }
+}
+
 button {
     background: $black-2;
     color: $white;
     padding: 20px 40px;
     border: 1px solid $white;
     border-radius: 16px;
+
     &:hover {
         background: $white;
         color: $black-2;
     }
 }
+
 .button-light {
     background: $white;
     color: $black-2;
     padding: 20px 40px;
     border: 1px solid $white;
     border-radius: 16px;
+
     &:hover {
         background: $black-2;
         color: $white;
     }
 }
+
 .ms-118 {
     margin-left: 118px;
 }
+
 .me-118 {
     margin-right: 118px;
 }
+
 .pt-8 {
     padding-top: 8px;
 }
+
 .pe-14 {
     padding-right: 14px;
 }
+
 .d-none {
     display: none;
 }
+
+.d-mobile-block {
+    @include mobile {
+        display: block;
+    }
+}
+

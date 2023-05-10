@@ -71,7 +71,6 @@
 
 // 針對h1標籤為圖片，設置隱藏文字，優化圖片SEO
 @mixin visual-hidden {
-    position: absolute;
     // 首行縮排設滿
     text-indent: 100%;
     // 不換行

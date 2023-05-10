@@ -94,14 +94,13 @@
     margin-top: 160px;
 
     ul {
-        display: flex;
-        flex-wrap: wrap;
         gap: 20px;
         margin-top: 80px;
+        @include scroll-style;
     }
 
     img {
-        width: 160px;
+        min-width: 160px;
         height: 40px;
     }
 }

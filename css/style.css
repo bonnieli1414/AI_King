@@ -875,6 +875,12 @@ button:hover {
   padding-right: 14px;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .d-none {
   display: none;
 }
@@ -1152,16 +1158,22 @@ footer .to-top {
   margin-top: 160px;
 }
 .section3 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 20px;
   margin-top: 80px;
+  overflow-x: auto;
+}
+.section3 ul::-webkit-scrollbar {
+  width: 0px;
+}
+.section3 ul::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.section3 ul::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 .section3 img {
-  width: 160px;
+  min-width: 160px;
   height: 40px;
 }
 

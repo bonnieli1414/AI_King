@@ -4,7 +4,6 @@ body {
     background: $black-1;
     color: $white;
 }
-
 .container {
     max-width: 1396px; //設計稿1296+50padding
     padding: 0 50px;
@@ -24,7 +23,6 @@ body {
         max-width: $mobile-width;
     }
 }
-
 .fz-1 {
     @include font(18); //48px
 }

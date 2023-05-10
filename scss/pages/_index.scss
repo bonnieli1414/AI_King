@@ -198,8 +198,18 @@
         margin-top: 40px;
     }
 
+    .card-header {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .card-img {
         border-radius: 16px 16px 0px 0px;
+        transition: transform 0.8s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     .card-text {

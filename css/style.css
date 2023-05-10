@@ -1032,8 +1032,20 @@ footer .to-top {
   border-radius: 16px;
   margin-top: 40px;
 }
+.section5 .card-header {
+  width: 100%;
+  overflow: hidden;
+}
 .section5 .card-img {
   border-radius: 16px 16px 0px 0px;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+.section5 .card-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .section5 .card-text {
   padding: 12px 32px;

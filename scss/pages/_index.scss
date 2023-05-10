@@ -168,6 +168,7 @@
 
         .list {
             display: flex;
+
             @include pad {
                 display: none;
             }
@@ -274,7 +275,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
+        .call_made {
+            @include mask("../../images/icons/call made.png", white, 15px);
+            margin-left: 16px;
+        }
+
+        &:hover {
+            color: $black-1;
+            background: white;
+        }
+
+        &:hover .call_made {
+            @include mask("../../images/icons/call made.png", $black-1, 15px)
+        }
+
 
         h6 {
             display: inline;

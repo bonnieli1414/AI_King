@@ -788,6 +788,9 @@ footer .part {
   display: flex;
   gap: 100px;
 }
+footer .to-top {
+  cursor: pointer;
+}
 
 .section0 .hero {
   margin-top: 140px;
@@ -1119,6 +1122,29 @@ footer .part {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.section6 .slogan .call_made {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  -webkit-mask: url("../../images/icons/call made.png") no-repeat center center;
+  mask: url("../../images/icons/call made.png") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  margin-left: 16px;
+}
+.section6 .slogan:hover {
+  color: #020202;
+  background: white;
+}
+.section6 .slogan:hover .call_made {
+  width: 15px;
+  height: 15px;
+  background-color: #020202;
+  -webkit-mask: url("../../images/icons/call made.png") no-repeat center center;
+  mask: url("../../images/icons/call made.png") no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 .section6 .slogan h6 {
   display: inline;

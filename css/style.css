@@ -653,6 +653,9 @@ header .container {
           align-items: center;
   border-bottom: 1px solid #FFFFFF;
 }
+header .logo {
+  padding: 20px 0px;
+}
 header .menu-desktop {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1035,9 +1035,10 @@ footer .to-top {
 .section5 .card-header {
   width: 100%;
   overflow: hidden;
+  border-radius: 16px 16px 0px 0px;
 }
 .section5 .card-img {
-  border-radius: 16px 16px 0px 0px;
+  width: 100%;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;

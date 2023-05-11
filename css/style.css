@@ -926,7 +926,7 @@ header h1 {
 }
 header .logo {
   width: 229px;
-  background: url("../../images/header/Union.png") left no-repeat, url("../../images/header/AI_tool_king.png") right no-repeat;
+  background: url("../images/header/Union.png") left no-repeat, url("../images/header/AI_tool_king.png") right no-repeat;
   padding: 20px 0px;
 }
 @media screen and (max-width: 767px) {
@@ -1075,21 +1075,54 @@ footer .to-top {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.section1 .animation img {
+.section1 .animation {
   width: 180px;
   height: 180px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
-  .section1 .animation img {
+  .section1 .animation {
     width: 150px;
     height: 150px;
   }
 }
 @media screen and (max-width: 576px) {
-  .section1 .animation img {
+  .section1 .animation {
     width: 117px;
     height: 117px;
   }
+}
+.section1 .animation-left {
+  position: absolute;
+  left: -366px;
+}
+@media screen and (max-width: 767px) {
+  .section1 .animation-left {
+    left: -306px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section1 .animation-left {
+    left: -240px;
+  }
+}
+.section1 .animation-middle {
+  position: absolute;
+  left: -183px;
+}
+@media screen and (max-width: 767px) {
+  .section1 .animation-middle {
+    left: -153px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section1 .animation-middle {
+    left: -120px;
+  }
+}
+.section1 .animation-right {
+  position: absolute;
+  left: 0px;
 }
 
 .section2 {

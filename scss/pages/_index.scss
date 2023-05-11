@@ -15,20 +15,50 @@
     }
 
     .animation {
-        img {
-            width: 180px;
-            height: 180px;
+        width: 180px;
+        height: 180px;
+        position: relative;
 
-            @include pad {
-                width: 150px;
-                height: 150px;
-            }
-
-            @include mobile {
-                width: 117px;
-                height: 117px;
-            }
+        @include pad {
+            width: 150px;
+            height: 150px;
         }
+
+        @include mobile {
+            width: 117px;
+            height: 117px;
+        }
+    }
+
+    .animation-left {
+        position: absolute;
+        left: -366px;
+
+        @include pad {
+            left: -306px;
+        }
+
+        @include mobile {
+            left: -240px;
+        }
+    }
+
+    .animation-middle {
+        position: absolute;
+        left: -183px;
+
+        @include pad {
+            left: -153px;
+        }
+
+        @include mobile {
+            left: -120px;
+        }
+    }
+
+    .animation-right {
+        position: absolute;
+        left: 0px;
     }
 }
 

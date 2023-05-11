@@ -1062,6 +1062,11 @@ footer .to-top {
   cursor: pointer;
 }
 
+.section0 {
+  position: relative;
+  z-index: 99;
+  background: #000;
+}
 .section0 .hero {
   margin-top: 140px;
 }
@@ -1095,6 +1100,10 @@ footer .to-top {
 .section1 .animation-left {
   position: absolute;
   left: -366px;
+  bottom: -200px;
+  z-index: 98;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
 }
 @media screen and (max-width: 767px) {
   .section1 .animation-left {
@@ -1109,6 +1118,10 @@ footer .to-top {
 .section1 .animation-middle {
   position: absolute;
   left: -183px;
+  bottom: -200px;
+  z-index: 98;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
 }
 @media screen and (max-width: 767px) {
   .section1 .animation-middle {
@@ -1123,10 +1136,17 @@ footer .to-top {
 .section1 .animation-right {
   position: absolute;
   left: 0px;
+  bottom: -200px;
+  z-index: 98;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
 }
 
 .section2 {
-  margin-top: 160px;
+  padding-top: 160px;
+  position: relative;
+  z-index: 99;
+  background: #000;
 }
 .section2 .section2-ul-01 {
   display: -webkit-box;

@@ -5,9 +5,13 @@ const toTopFn = () => {
 $('.to-top').on('click', toTopFn)
 
 // 動態往上
-// $('.animation img')
+let toUpIndex = 0;
+const distance = ['-200px', '0px', '0px', '200px'];
+const animationToUp = (dom) => {
+    dom.css('bottom', distance[toUpIndex % distance.length])
+toUpIndex++;
 
-// const animationToUp = () => {
-    
-// }
-// setIntervalId = setInterval(animationToUp, 1000);
+}
+setIntervalId01 = setInterval(animationToUp, 1000, $($('.animation img')[0]));
+setIntervalId02 = setInterval(animationToUp, 1000, $($('.animation img')[1]));
+setIntervalId03 = setInterval(animationToUp, 1000, $($('.animation img')[2]));

@@ -1,4 +1,8 @@
 .section0 {
+    position: relative;
+    z-index: 99;
+    background: #000;
+
     .hero {
         margin-top: 140px;
     }
@@ -33,6 +37,9 @@
     .animation-left {
         position: absolute;
         left: -366px;
+        bottom: -200px;
+        z-index: 98;
+        transition: ease-in 1s;
 
         @include pad {
             left: -306px;
@@ -46,6 +53,9 @@
     .animation-middle {
         position: absolute;
         left: -183px;
+        bottom: -200px;
+        z-index: 98;
+        transition: ease-in 1s;
 
         @include pad {
             left: -153px;
@@ -59,11 +69,17 @@
     .animation-right {
         position: absolute;
         left: 0px;
+        bottom: -200px;
+        z-index: 98;
+        transition: ease-in 1s;
     }
 }
 
 .section2 {
-    margin-top: 160px;
+    padding-top: 160px;
+    position: relative;
+    z-index: 99;
+    background: #000;
 
     .section2-ul-01 {
         display: flex;

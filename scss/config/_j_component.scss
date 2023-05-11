@@ -134,6 +134,9 @@
     align-items: stretch;
 
     .card {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         // 子元素寬度各佔33.33%
         // - 20px產生gap:10px
         flex-basis: calc(33.33% - 20px);

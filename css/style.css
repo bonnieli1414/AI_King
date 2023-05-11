@@ -328,6 +328,9 @@ body {
           align-items: stretch;
 }
 .card-group .card {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-preferred-size: calc(33.33% - 20px);
       flex-basis: calc(33.33% - 20px);
 }

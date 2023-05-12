@@ -504,9 +504,9 @@ body {
   font-weight: 400;
 }
 
-.title-sm {
-  font-size: 80px;
-  line-height: 96px;
+.title-lg {
+  font-size: 160px;
+  line-height: 192px;
   font-weight: 400;
 }
 
@@ -516,9 +516,9 @@ body {
   font-weight: 400;
 }
 
-.title-lg {
-  font-size: 160px;
-  line-height: 192px;
+.title-sm {
+  font-size: 80px;
+  line-height: 96px;
   font-weight: 400;
 }
 
@@ -558,7 +558,7 @@ h6 {
   font-weight: 900;
 }
 
-.p-bold {
+.p-bold-lg {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -576,9 +576,9 @@ h6 {
   font-weight: 700;
 }
 
-.title-bold-sm {
-  font-size: 80px;
-  line-height: 96px;
+.title-bold-lg {
+  font-size: 160px;
+  line-height: 192px;
   font-weight: 900;
 }
 
@@ -588,9 +588,9 @@ h6 {
   font-weight: 900;
 }
 
-.title-bold-lg {
-  font-size: 160px;
-  line-height: 192px;
+.title-bold-sm {
+  font-size: 80px;
+  line-height: 96px;
   font-weight: 900;
 }
 
@@ -640,9 +640,9 @@ h6 {
     line-height: 15px;
     font-weight: 400;
   }
-  .title-pad-sm {
-    font-size: 80px;
-    line-height: 96px;
+  .title-pad-lg {
+    font-size: 160px;
+    line-height: 192px;
     font-weight: 400;
   }
   .title-pad-md {
@@ -650,9 +650,9 @@ h6 {
     line-height: 144px;
     font-weight: 400;
   }
-  .title-pad-lg {
-    font-size: 160px;
-    line-height: 192px;
+  .title-pad-sm {
+    font-size: 80px;
+    line-height: 96px;
     font-weight: 400;
   }
   .h1-pad {
@@ -685,7 +685,7 @@ h6 {
     line-height: 24px;
     font-weight: 900;
   }
-  .p-pad-bold {
+  .p-pad-bold-lg {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -700,9 +700,9 @@ h6 {
     line-height: 15px;
     font-weight: 700;
   }
-  .title-pad-bold-sm {
-    font-size: 80px;
-    line-height: 96px;
+  .title-pad-bold-lg {
+    font-size: 160px;
+    line-height: 192px;
     font-weight: 900;
   }
   .title-pad-bold-md {
@@ -710,9 +710,9 @@ h6 {
     line-height: 144px;
     font-weight: 900;
   }
-  .title-pad-bold-lg {
-    font-size: 160px;
-    line-height: 192px;
+  .title-pad-bold-sm {
+    font-size: 80px;
+    line-height: 96px;
     font-weight: 900;
   }
 }
@@ -762,9 +762,9 @@ h6 {
     line-height: 15px;
     font-weight: 400;
   }
-  .title-mobile-sm {
-    font-size: 80px;
-    line-height: 96px;
+  .title-mobile-lg {
+    font-size: 160px;
+    line-height: 192px;
     font-weight: 400;
   }
   .title-mobile-md {
@@ -772,9 +772,9 @@ h6 {
     line-height: 144px;
     font-weight: 400;
   }
-  .title-mobile-lg {
-    font-size: 160px;
-    line-height: 192px;
+  .title-mobile-sm {
+    font-size: 80px;
+    line-height: 96px;
     font-weight: 400;
   }
   .h1-mobile {
@@ -807,7 +807,7 @@ h6 {
     line-height: 24px;
     font-weight: 900;
   }
-  .p-mobile-bold {
+  .p-mobile-bold-lg {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -839,43 +839,27 @@ h6 {
   }
 }
 button {
-  background: #1E1E1E;
-  color: #FFFFFF;
   padding: 20px 40px;
   border: 1px solid #FFFFFF;
   border-radius: 16px;
 }
-button:hover {
-  background: #FFFFFF;
-  color: #1E1E1E;
-}
 
-.button-light {
-  background: #FFFFFF;
-  color: #1E1E1E;
-  padding: 20px 40px;
-  border: 1px solid #FFFFFF;
-  border-radius: 16px;
-}
-.button-light:hover {
+.btn-dark {
   background: #1E1E1E;
   color: #FFFFFF;
 }
-
-.ms-118 {
-  margin-left: 118px;
+.btn-dark:hover {
+  background: #FFFFFF;
+  color: #1E1E1E;
 }
 
-.me-118 {
-  margin-right: 118px;
+.btn-light {
+  background: #FFFFFF;
+  color: #1E1E1E;
 }
-
-.pt-8 {
-  padding-top: 8px;
-}
-
-.pe-14 {
-  padding-right: 14px;
+.btn-light:hover {
+  background: #1E1E1E;
+  color: #FFFFFF;
 }
 
 .d-flex {
@@ -900,16 +884,29 @@ button:hover {
   }
 }
 
+.ms-118 {
+  margin-left: 118px;
+}
+
+.me-118 {
+  margin-right: 118px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pe-14 {
+  padding-right: 14px;
+}
+
 header {
-  position: fixed;
   width: 100%;
   background: #020202;
+  position: fixed;
   z-index: 9999;
 }
 header .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  gap: 14px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -926,6 +923,7 @@ header h1 {
 }
 header .logo {
   width: 229px;
+  height: 80px;
   background: url("../images/header/Union.png") left no-repeat, url("../images/header/AI_tool_king.png") right no-repeat;
   padding: 20px 0px;
 }
@@ -975,7 +973,7 @@ header .logo {
     color: #FFFFFF;
     background-color: #020202;
     position: fixed;
-    top: 88.67px;
+    top: 81px;
     bottom: 0;
     left: 0;
     -webkit-transition: margin-left 0.5s;
@@ -1068,11 +1066,11 @@ footer .to-top {
   background: #000;
 }
 .section0 .hero {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 .section0 button {
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
 }
 
 .section1 .container {
@@ -1334,8 +1332,8 @@ footer .to-top {
   width: 10px;
   height: 10px;
   background-color: #FFFFFF;
-  -webkit-mask: url("../../images/icons/filter.png") no-repeat center center;
-  mask: url("../../images/icons/filter.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/filter.png") no-repeat center center;
+  mask: url("../images/icons/filter.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
@@ -1343,8 +1341,8 @@ footer .to-top {
   width: 10px;
   height: 10px;
   background-color: #FFFFFF;
-  -webkit-mask: url("../../images/icons/keyboard arrow down.png") no-repeat center center;
-  mask: url("../../images/icons/keyboard arrow down.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
+  mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
@@ -1352,8 +1350,8 @@ footer .to-top {
   width: 10px;
   height: 10px;
   background-color: #020202;
-  -webkit-mask: url("../../images/icons/filter.png") no-repeat center center;
-  mask: url("../../images/icons/filter.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/filter.png") no-repeat center center;
+  mask: url("../images/icons/filter.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
@@ -1363,8 +1361,8 @@ footer .to-top {
   width: 10px;
   height: 10px;
   background-color: #020202;
-  -webkit-mask: url("../../images/icons/keyboard arrow down.png") no-repeat center center;
-  mask: url("../../images/icons/keyboard arrow down.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
+  mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }

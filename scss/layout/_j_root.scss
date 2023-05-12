@@ -64,16 +64,16 @@ body {
     @include font(0); //12px
 }
 
-.title-sm {
-    @include font(34); //80px
+.title-lg {
+    @include font(74); //160px
 }
 
 .title-md {
     @include font(54); //120px
 }
 
-.title-lg {
-    @include font(74); //160px
+.title-sm {
+    @include font(34); //80px
 }
 
 .h1 {
@@ -100,7 +100,7 @@ h6 {
     @include font(4, 900); //20px
 }
 
-.p-bold {
+.p-bold-lg {
     @include font(2, 700); //16px
 }
 
@@ -112,16 +112,16 @@ h6 {
     @include font(0, 700); //12px
 }
 
-.title-bold-sm {
-    @include font(34, 900); //80px
+.title-bold-lg {
+    @include font(74, 900); //160px
 }
 
 .title-bold-md {
     @include font(54, 900); //120px
 }
 
-.title-bold-lg {
-    @include font(74, 900); //160px
+.title-bold-sm {
+    @include font(34, 900); //80px
 }
 
 // 平版版型
@@ -162,16 +162,16 @@ h6 {
         @include font(0); //12px
     }
 
-    .title-pad-sm {
-        @include font(34); //80px
+    .title-pad-lg {
+        @include font(74); //160px
     }
 
     .title-pad-md {
         @include font(54); //120px
     }
 
-    .title-pad-lg {
-        @include font(74); //160px
+    .title-pad-sm {
+        @include font(34); //80px
     }
 
     .h1-pad {
@@ -198,7 +198,7 @@ h6 {
         @include font(4, 900); //20px
     }
 
-    .p-pad-bold {
+    .p-pad-bold-lg {
         @include font(2, 700); //16px
     }
 
@@ -210,16 +210,16 @@ h6 {
         @include font(0, 700); //12px
     }
 
-    .title-pad-bold-sm {
-        @include font(34, 900); //80px
+    .title-pad-bold-lg {
+        @include font(74, 900); //160px
     }
 
     .title-pad-bold-md {
         @include font(54, 900); //120px
     }
 
-    .title-pad-bold-lg {
-        @include font(74, 900); //160px
+    .title-pad-bold-sm {
+        @include font(34, 900); //80px
     }
 }
 
@@ -261,16 +261,16 @@ h6 {
         @include font(0); //12px
     }
 
-    .title-mobile-sm {
-        @include font(34); //80px
+    .title-mobile-lg {
+        @include font(74); //160px
     }
 
     .title-mobile-md {
         @include font(54); //120px
     }
 
-    .title-mobile-lg {
-        @include font(74); //160px
+    .title-mobile-sm {
+        @include font(34); //80px
     }
 
     .h1-mobile {
@@ -297,7 +297,7 @@ h6 {
         @include font(4, 900); //20px
     }
 
-    .p-mobile-bold {
+    .p-mobile-bold-lg {
         @include font(2, 700); //16px
     }
 
@@ -323,11 +323,14 @@ h6 {
 }
 
 button {
-    background: $black-2;
-    color: $white;
     padding: 20px 40px;
     border: 1px solid $white;
     border-radius: 16px;
+}
+
+.btn-dark {
+    background: $black-2;
+    color: $white;
 
     &:hover {
         background: $white;
@@ -335,16 +338,33 @@ button {
     }
 }
 
-.button-light {
+.btn-light {
     background: $white;
     color: $black-2;
-    padding: 20px 40px;
-    border: 1px solid $white;
-    border-radius: 16px;
 
     &:hover {
         background: $black-2;
         color: $white;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-mobile-block {
+    @include mobile {
+        display: block;
+    }
+}
+
+.text-mobile-center {
+    @include mobile {
+        text-align: center;
     }
 }
 
@@ -362,22 +382,4 @@ button {
 
 .pe-14 {
     padding-right: 14px;
-}
-
-.d-flex {
-    display: flex;
-}
-.d-none {
-    display: none;
-}
-
-.d-mobile-block {
-    @include mobile {
-        display: block;
-    }
-}
-.text-mobile-center {
-    @include mobile {
-        text-align: center;
-    }
 }

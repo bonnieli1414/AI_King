@@ -25,6 +25,6 @@ const animationImg = $('.animation img')
 animationImg.each((index, element) => {
     setInterval(animationToUp, 1000, $(animationImg[element]), index)
 });
-setIntervalId01 = setInterval(animationToUp, 1000, $($('.animation img')[0]), 1);
-setIntervalId02 = setInterval(animationToUp, 1000, $($('.animation img')[1]), 2);
-setIntervalId03 = setInterval(animationToUp, 1000, $($('.animation img')[2]), 3);
+setIntervalId01 = setInterval(animationToUp, 1000, $(animationImg[0]), 1);
+setIntervalId02 = setInterval(animationToUp, 1000, $(animationImg[1]), 2);
+setIntervalId03 = setInterval(animationToUp, 1000, $(animationImg[2]), 3);

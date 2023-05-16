@@ -1093,7 +1093,7 @@ footer .to-top {
 .section1 .animation-left {
   position: absolute;
   left: -366px;
-  bottom: -200px;
+  bottom: 200px;
   z-index: 98;
   -webkit-transition: ease-in 1s;
   transition: ease-in 1s;
@@ -1111,7 +1111,7 @@ footer .to-top {
 .section1 .animation-middle {
   position: absolute;
   left: -183px;
-  bottom: -200px;
+  bottom: 0px;
   z-index: 98;
   -webkit-transition: ease-in 1s;
   transition: ease-in 1s;

@@ -37,7 +37,7 @@
     .animation-left {
         position: absolute;
         left: -366px;
-        bottom: -200px;
+        bottom: 200px;
         z-index: 98;
         transition: ease-in 1s;
 
@@ -53,7 +53,7 @@
     .animation-middle {
         position: absolute;
         left: -183px;
-        bottom: -200px;
+        bottom: 0px;
         z-index: 98;
         transition: ease-in 1s;
 

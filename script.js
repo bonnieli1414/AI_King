@@ -7,7 +7,7 @@ $('.to-top').on('click', toTopFn)
 // 動態往上
 let toUpIndex = 0;
 const distance = ['-200px', '0px', '0px', '200px', '200px', '400px'];
-const animationToUp = (dom, index) => {
+const animationToUp = (dom) => {
     // console.log(distance[toUpIndex], index)
     dom.css('bottom', distance[toUpIndex])
     toUpIndex++;
@@ -23,8 +23,9 @@ const animationToUp = (dom, index) => {
 
 const animationImg = $('.animation img')
 animationImg.each((index, element) => {
-    setInterval(animationToUp, 1000, $(animationImg[element]), index)
+    console.log($(animationImg[index]))
+    setInterval(animationToUp, 1000, $(animationImg[index]))
 });
-setIntervalId01 = setInterval(animationToUp, 1000, $(animationImg[0]), 1);
-setIntervalId02 = setInterval(animationToUp, 1000, $(animationImg[1]), 2);
-setIntervalId03 = setInterval(animationToUp, 1000, $(animationImg[2]), 3);
+setIntervalId01 = setInterval(animationToUp, 1000, $(animationImg[0]));
+setIntervalId02 = setInterval(animationToUp, 1000, $(animationImg[1]));
+setIntervalId03 = setInterval(animationToUp, 1000, $(animationImg[2]));

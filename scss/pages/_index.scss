@@ -213,7 +213,7 @@
     }
 
     .search {
-        @include mask("../../images/icons/search.png", $black-4, 18px);
+        @include mask("../images/icons/search.png", $black-4, 18px);
         position: absolute;
         top: 50%;
         left: 43px;
@@ -337,7 +337,7 @@
             }
 
             &:hover .arrow-right {
-                @include mask("../../images/icons/keyboard arrow right.png", $white, 8px);
+                @include mask("../images/icons/keyboard arrow right.png", $white, 8px);
             }
         }
 
@@ -346,7 +346,7 @@
         }
 
         .arrow-right {
-            @include mask("../../images/icons/keyboard arrow right.png", $black-1, 8px);
+            @include mask("../images/icons/keyboard arrow right.png", $black-1, 8px);
             position: absolute;
             top: 20px;
             left: 20px;
@@ -373,7 +373,7 @@
         justify-content: center;
 
         .call_made {
-            @include mask("../../images/icons/call made.png", white, 15px);
+            @include mask("../images/icons/call made.png", white, 15px);
             margin-left: 16px;
         }
 
@@ -383,7 +383,7 @@
         }
 
         &:hover .call_made {
-            @include mask("../../images/icons/call made.png", $black-1, 15px)
+            @include mask("../images/icons/call made.png", $black-1, 15px)
         }
 
 

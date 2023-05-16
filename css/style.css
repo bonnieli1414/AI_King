@@ -1291,8 +1291,8 @@ footer .to-top {
   width: 18px;
   height: 18px;
   background-color: #919191;
-  -webkit-mask: url("../../images/icons/search.png") no-repeat center center;
-  mask: url("../../images/icons/search.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/search.png") no-repeat center center;
+  mask: url("../images/icons/search.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
   position: absolute;
@@ -1457,8 +1457,8 @@ footer .to-top {
   width: 8px;
   height: 8px;
   background-color: #FFFFFF;
-  -webkit-mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
-  mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
+  mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
@@ -1469,8 +1469,8 @@ footer .to-top {
   width: 8px;
   height: 8px;
   background-color: #020202;
-  -webkit-mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
-  mask: url("../../images/icons/keyboard arrow right.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
+  mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
   position: absolute;
@@ -1503,8 +1503,8 @@ footer .to-top {
   width: 15px;
   height: 15px;
   background-color: white;
-  -webkit-mask: url("../../images/icons/call made.png") no-repeat center center;
-  mask: url("../../images/icons/call made.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/call made.png") no-repeat center center;
+  mask: url("../images/icons/call made.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
   margin-left: 16px;
@@ -1517,8 +1517,8 @@ footer .to-top {
   width: 15px;
   height: 15px;
   background-color: #020202;
-  -webkit-mask: url("../../images/icons/call made.png") no-repeat center center;
-  mask: url("../../images/icons/call made.png") no-repeat center center;
+  -webkit-mask: url("../images/icons/call made.png") no-repeat center center;
+  mask: url("../images/icons/call made.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
 }

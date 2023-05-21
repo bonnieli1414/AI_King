@@ -30,13 +30,13 @@
     @extend %flex-aic;
 }
 
-.flex-x-jcsb {
+.flex-between {
     @extend %flex-jcsb;
     @extend %flex-aic;
 }
 
-.flex-flex-end {
-    @extend %flex-flex-end;
+.flex-end {
+    @extend %flex-end;
     @extend %flex-aic;
 }
 

@@ -57,7 +57,7 @@ $primary-color: #F18724;
     justify-content: center;
 }
 
-%flex-flex-end {
+%flex-end {
     @extend %d-flex;
     justify-content: flex-end;
 }

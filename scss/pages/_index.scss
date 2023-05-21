@@ -1,22 +1,15 @@
-.section1 {
-    .container {
-        justify-content: flex-end;
+.animation {
+    width: 180px;
+    height: 180px;
+
+    @include pad {
+        width: 150px;
+        height: 150px;
     }
 
-    .animation {
-        width: 180px;
-        height: 180px;
-        position: relative;
-
-        @include pad {
-            width: 150px;
-            height: 150px;
-        }
-
-        @include mobile {
-            width: 117px;
-            height: 117px;
-        }
+    @include mobile {
+        width: 117px;
+        height: 117px;
     }
 
     .animation-left {
@@ -60,70 +53,41 @@
     }
 }
 
+
+
 .section2 {
-    padding-top: 160px;
-    position: relative;
-    z-index: 99;
-    background: #000;
 
-    .section2-ul-01 {
-        display: flex;
-        justify-content: space-between;
 
-        @include mobile {
-            display: block;
-        }
+    // .card-group {
+    //     .card {
+    //         width: calc(33.33% - 20px);
+    //         // flex-basis: calc(33.33% - 20px);
 
-        .flex-1 {
-            flex: 1;
+    //         @include mobile {
+    //             // flex-basis: calc(100% - 20px);
+    //             width: calc(100% - 20px);
+    //         }
+    //     }
 
-            h3 {
-                @include mobile {
-                    margin-bottom: 24px;
-                }
-            }
-        }
+    //     .card-item {
+    //         margin: 0 auto;
+    //         padding: 80px 40px;
+    //         border: 1px solid $black-3;
+    //         border-radius: 16px;
 
-        .flex-2 {
-            flex: 2;
-        }
+    //         @include pad {
+    //             padding: 40px 20px;
+    //         }
 
-    }
+    //         li {
+    //             max-width: 416px;
+    //         }
 
-    .card-group {
-        justify-content: space-between;
-        margin-top: 80px;
-        gap: 24px;
-
-        .card {
-            width: calc(33.33% - 20px);
-            // flex-basis: calc(33.33% - 20px);
-
-            @include mobile {
-                // flex-basis: calc(100% - 20px);
-                width: calc(100% - 20px);
-            }
-        }
-
-        .card-item {
-            margin: 0 auto;
-            padding: 80px 40px;
-            border: 1px solid $black-3;
-            border-radius: 16px;
-
-            @include pad {
-                padding: 40px 20px;
-            }
-
-            li {
-                max-width: 416px;
-            }
-
-            h3 {
-                padding: 20px 0px;
-            }
-        }
-    }
+    //         h3 {
+    //             padding: 20px 0px;
+    //         }
+    //     }
+    // }
 }
 
 .section3 {
@@ -389,6 +353,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         padding-top: 80px;
+
         @include mobile {
             display: block;
         }

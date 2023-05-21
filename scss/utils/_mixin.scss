@@ -126,50 +126,36 @@
     }
 }
 
-// 每張卡片高度設定等高
-@mixin cardHeightIsSame {
+// 卡片樣式
+@mixin card-style {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: stretch;
+    gap: 24px;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
 
     .card {
-        // width: 100%;
-        // margin-left: auto;
-        // margin-right: auto;
-        // 子元素寬度各佔33.33%
-        // - 20px產生gap:10px
-        // flex-basis: calc(33.33% - 20px);
-        // // flex-grow: 1; //此設定是讓寬度可以自適應寬度瑱滿
+        width: 416px;
+        margin: 0 auto;
+        padding: 86px 40px 80px 40px;
+        border: 1px solid $black-3;
+        border-radius: 16px;
 
-        // @include pad {
-        //     flex-basis: calc(50% - 20px);
-        // }
-
-        // @include mobile {
-        //     flex-basis: calc(100% - 20px);
-        // }
-    }
-}
-
-// 每張卡片內的內文高度設定等高
-@mixin cardTextHeightIsSame {
-    .card-item {
-        display: flex;
-        flex-direction: column;
-        // justify-content: space-between;
-        height: 100%;
-    }
-
-    .card-text {
-        flex-grow: 1;
+        @include mobile {
+            width: 100%;
+            margin-top: 12px;
+        }
     }
 }
 
 .card-group {
-    @include cardHeightIsSame;
-    @include cardTextHeightIsSame;
+    @include card-style;
 }
 
 // 圖片置中

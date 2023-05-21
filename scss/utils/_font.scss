@@ -1,32 +1,62 @@
-body {
-    font-family: Noto Sans TC;
-    background: $black-1;
-    color: $white;
+// 變數設置
+$baseSize: 12px; //基本字型大小
+$sizeLevel: 2px; //基本字型大小的補償值
+$paddingLevel: 1.2; //行高設定
+
+// $level: 0 是指預設值為0
+// 建立字集
+@function font($level: 0) {
+    @if $level < 0 {
+        $level: 0;
+    }
+
+    @return calc($baseSize + $sizeLevel * round($level));
+    //   12px   +   2 * 倍數 
 }
 
-.container {
-    max-width: 1396px; //設計稿1296+50padding
-    padding: 0 50px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+// 行高
+@function rhythm($size) {
+    @return ceil(calc($size * $paddingLevel));
+    //   12px   *   1.2倍高
+}
 
-    @include desktop {
-        padding: 0px 30px;
-        max-width: $desktop-width;
+// 字重
+@function boldness($bold) {
+    @if $bold ==auto or $bold < 0 {
+        $bold: 400;
     }
 
-    @include pad {
-        padding: 0px 20px;
-        max-width: $pad-width;
+    @return round($bold);
+    //   12px   +   2 * 倍數 
+}
+
+
+// 建立字集、行高和字重組合
+@mixin font($level: 1, $font-weight: auto, $line-height: auto) {
+    $size: font($level);
+    $line: rhythm($size);
+    $weight: boldness($font-weight);
+
+    font-size: $size;
+
+    @if $line-height ==auto {
+        line-height: $line;
     }
 
-    @include mobile {
-        padding: 0px 12px;
-        max-width: $mobile-width;
+    @else {
+        line-height: $line-height;
+    }
+
+    @if $font-weight ==auto {
+        font-weight: $weight;
+    }
+
+    @else {
+        font-weight: $font-weight;
     }
 }
 
+// 字型設定
 .fz-1 {
     @include font(18); //48px
 }
@@ -123,7 +153,15 @@ h6 {
     @include font(34, 900); //80px
 }
 
-// 平版版型
+.bold-700 {
+    font-weight: 700;
+}
+
+.bold-900 {
+    font-weight: 900;
+}
+
+// 平版
 @media screen and (max-width: $pad-breakpoints) {
     .fz-pad-1 {
         @include font(18); //48px
@@ -222,7 +260,7 @@ h6 {
     }
 }
 
-// 手機版型
+// 手機版
 @media screen and (max-width: $mobile-breakpoints) {
     .fz-mobile-1 {
         @include font(18); //48px
@@ -319,66 +357,4 @@ h6 {
     .title-mobile-bold-lg {
         @include font(74, 900); //160px
     }
-}
-
-button {
-    padding: 20px 40px;
-    border: 1px solid $white;
-    border-radius: 16px;
-}
-
-.btn-dark {
-    background: $black-2;
-    color: $white;
-
-    &:hover {
-        background: $white;
-        color: $black-2;
-    }
-}
-
-.btn-light {
-    background: $white;
-    color: $black-2;
-
-    &:hover {
-        background: $black-2;
-        color: $white;
-    }
-}
-
-.d-flex {
-    display: flex;
-}
-
-.d-none {
-    display: none;
-}
-
-.d-mobile-block {
-    @include mobile {
-        display: block;
-    }
-}
-
-.text-mobile-center {
-    @include mobile {
-        text-align: center;
-    }
-}
-
-.ms-118 {
-    margin-left: 118px;
-}
-
-.me-118 {
-    margin-right: 118px;
-}
-
-.pt-8 {
-    padding-top: 8px;
-}
-
-.pe-14 {
-    padding-right: 14px;
 }

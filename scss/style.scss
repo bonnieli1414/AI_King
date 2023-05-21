@@ -1,22 +1,30 @@
-// node_modules
+// 外部的第三方套件
 // bootstrap客製化，有相依和順序性，引入順序不能變更
 // 參考文件https://getbootstrap.com/docs/5.0/customize/sass/#variable-defaults
 // @import '../../../node_modules/bootstrap/scss/functions';
 // @import './config/j_bs_custom'; //修改bs的Variables文件資料
 // @import '../../../node_modules/bootstrap/scss/bootstrap';
+// 引入google font 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
-// config- reset 和 normaliz 二擇一
+
+// 基本設定
 // @import './config/reset'; 
 @import './config/normalize';
-@import './config/j_variables';
-@import './config/j_component';
-@import './config/j_base';
+@import './config/variables';
+@import './config/base';
+
+
+// 通用設定
+@import './utils/font';
+@import './utils/mixin';
+@import './utils/utilities';
 
 
 // 全站設定
-@import './layout/j_root';
 @import './layout/header';
 @import './layout/footer';
 
-// Pages
+
+// 各分頁設定
 @import './pages/index';

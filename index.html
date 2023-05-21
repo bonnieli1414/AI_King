@@ -11,10 +11,10 @@
 
 <body>
     <!-- header開始 -->
-    <header>
-        <div class="container">
+    <header class="w-100 pos-fixed bg-black01" style="z-index: 9999;">
+        <div class="container flex-wrap flex-x-jcsb pos-relative">
             <h1>
-                <a href="#" class="logo">
+                <a href="#" class="logo px-20">
                     AI工具王
                 </a>
             </h1>
@@ -30,18 +30,19 @@
                     </div>
                 </label>
                 <!-- 側邊欄開始 -->
-                <ul class="offcanvas-right">
-                    <li class="offcanvas-body title-bold-sm">
+                <ul class="offcanvas-right d-none d-pad-block">
+                    <li class="offcanvas-body flex-xy-center title-bold-sm">
                         <ul>
                             <li><a href="#">首頁</a></li>
                             <li><a href="#">定價</a></li>
                         </ul>
                     </li>
-                    <li class="offcanvas-footer">
+                    <div class="border-white"></div>
+                    <li class="offcanvas-footer px-12 py-32">
                         <ul>
                             <li class="copyright">AI工具王 © 2023</li>
                             <li>
-                                <ul class="society">
+                                <ul class="society d-flex gap-20 pt-36">
                                     <li><a href="#">Facebook</a></li>
                                     <li><a href="#">Twitter</a></li>
                                     <li><a href="#">Instagram</a></li>
@@ -55,26 +56,27 @@
             <!-- 漢堡選單結束 -->
 
             <!-- 桌機版的導覽列開始 -->
-            <ul class="menu-desktop">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">定價</a></li>
+            <ul class="menu-desktop d-flex d-pad-none gap-20">
+                <li><a class="py-28" href="#">首頁</a></li>
+                <li><a class="py-28" href="#">定價</a></li>
             </ul>
             <!-- 桌機版的導覽列結束 -->
+            <div class="border-white"></div>
         </div>
     </header>
     <!-- header結束 -->
 
     <!-- 各單位區域開始 -->
-    <section class="section0">
-        <div class="container">
-            <div class="hero">
-                <div class="title-bold-md title-pad-bold-sm h1-mobile">
+    <section class="section pos-relative" style="z-index: 99;">
+        <div class="container flex-wrap">
+            <div class="hero mt-120">
+                <h2 class="title-bold-md title-pad-bold-sm h1-mobile">
                     透過<br>
                     AI 工具王的<br>
                     強大模型<br>
                     讓您的業務更聰明<br>
-                </div>
-                <button class="h6 btn-dark">開始使用</button>
+                </h2>
+                <a class="h6 btn btn-dark text-center mt-40" style="width: 160px;">開始使用</a>
             </div>
         </div>
     </section>
@@ -82,7 +84,7 @@
 
     <!-- 各單位區域開始 -->
     <section class="section1">
-        <div class="container">
+        <div class="container flex-wrap">
             <div class="animation">
                 <img class="animation-left" src="./images/section1/avatar3.png">
                 <img class="animation-middle" src="./images/section1/avatar3.png">
@@ -94,19 +96,19 @@
 
     <!-- 各單位區域開始 -->
     <section class="section2">
-        <div class="container">
-            <ul class="section2-ul-01">
-                <li class="flex-1">
+        <div class="container flex-wrap">
+            <div class="section2-ul-01">
+                <div class="flex-1">
                     <h3 class="h4-pad h6-mobile">我們的服務</h3>
-                </li>
-                <li class="flex-2">
+                </div>
+                <div class="flex-2">
                     <div class="h1 h2-pad h3-mobile">我們相信透過 AI 技術，
                         包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
             <ul class="card-group">
-                <li class="card">
+                <li class="card d-flex">
                     <ul class="card-item">
                         <li><img src="./images/section2/flash on.png" alt="快速"></li>
                         <li>
@@ -117,7 +119,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="card">
+                <li class="card d-flex">
                     <ul class="card-item">
                         <li><img src="./images/section2/auto awesome.png" alt="靈活"></li>
                         <li>
@@ -128,7 +130,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="card">
+                <li class="card d-flex">
                     <ul class="card-item">
                         <li><img src="./images/section2/library add.png" alt="擴充"></li>
                         <li>
@@ -146,7 +148,7 @@
 
     <!-- 各單位區域開始 -->
     <section class="section3">
-        <div class="container">
+        <div class="container flex-wrap">
             <h3 class="h4-pad h6-mobile">來自合作夥伴</h3>
             <ul>
                 <li>
@@ -177,7 +179,7 @@
 
     <!-- 各單位區域開始 -->
     <section class="section4">
-        <div class="container">
+        <div class="container flex-wrap">
             <ul class="card-group">
                 <li class="card">
                     <ul class="card-item">
@@ -277,9 +279,9 @@
 
     <!-- 各單位區域開始 -->
     <section class="section5">
-        <div class="container">
-            <div class="title title-bold-sm h1-pad h3-mobile text-mobile-center"><span
-                    class="d-mobile-block">這些超酷的應用，</span>都來自 AI工具王<span></span></div>
+        <div class="container flex-wrap">
+            <h2 class="title title-bold-sm h1-pad h3-mobile text-mobile-center"><span
+                    class="d-mobile-block">這些超酷的應用，</span><span>都來自 AI工具王</span></h2>
             <div class="search-bar">
                 <input type="text" placeholder="輸入關鍵字搜尋">
                 <div class="search"></div>
@@ -513,36 +515,43 @@
 
     <!-- 各單位區域開始 -->
     <section class="section6">
-        <div class="h1 h2-pad h3-mobile">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></div>
-        <a class="slogan" href="#">
-            <h6>開始使用</h6>
-            <div class="call_made"></div>
-        </a>
         <div class="container">
-            <a href="#" class="logo">
-                <img src="./images/header/Union.png">
-                <img src="./images/header/AI_tool_king.png" alt="AI工具王">
+            <div class="h1 h2-pad h3-mobile">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></div>
+            <a class="slogan" href="#">
+                <h6>開始使用</h6>
+                <div class="call_made"></div>
             </a>
-            <ul>
-                <li class="title-sm h1-mobile"><a href="#">首頁</a></li>
-                <li class="title-sm h1-mobile"><a href="#">定價</a></li>
-            </ul>
+            <div class="border-white"></div>
+            <div class="flex-x-jcsb">
+                <ul class="py-80">
+                    <li class="title-sm h1-mobile"><a href="#">首頁</a></li>
+                    <li class="title-sm h1-mobile"><a href="#">定價</a></li>
+                </ul>
+                <a href="#" class="logo">
+                    <img src="./images/header/Union.png">
+                    <img src="./images/header/AI_tool_king.png" alt="AI工具王">
+                </a>
+            </div>
+            <div class="border-white"></div>
         </div>
+
+
     </section>
     <!-- 各單位區域結束 -->
 
     <!-- footer開始 -->
     <footer>
-        <div class="container">
-            <div class="part">
-                <div class="copyright">AI工具王 © 2023</div>
-                <ul class="society">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+        <div class="container flex-wrap flex-x-jcsb flex-mobile-ais">
+            <div class="flex-x-jcsb gap-100 d-mobile-block">
+                <div class="copyright pt-mobile-32 pb-mobile-4">AI工具王 © 2023</div>
+                <ul class="society d-flex gap-20">
+                    <li><a class="py-32" href="#">Facebook</a></li>
+                    <li><a class="py-32" href="#">Twitter</a></li>
+                    <li><a class="py-32" href="#">Instagram</a></li>
                 </ul>
             </div>
-            <div class="to-top">Back to top<img src="./images/icons/arrow upward.png"></div>
+            <a class="to-top pt-mobile-32">Back to top<img src="./images/icons/arrow upward.png"></a>
+
         </div>
     </footer>
     <!-- footer結束 -->

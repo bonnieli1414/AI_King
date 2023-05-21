@@ -1,16 +1,4 @@
 header {
-    width: 100%;
-    background: $black-1;
-    position: fixed;
-    z-index: 9999;
-
-    .container {
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid $white;
-        position: relative;
-    }
-
     h1 {
         @include visual-hidden;
     }
@@ -21,7 +9,6 @@ header {
         background:
             url('../images/header/Union.png') left no-repeat,
             url('../images/header/AI_tool_king.png') right no-repeat;
-        padding: 20px 0px;
     }
 
     // 響應式設置：手機或pad版時引入ham-menu
@@ -31,49 +18,13 @@ header {
         }
     }
 
-    .offcanvas-right {
-        display: none;
-        padding: 0;
-
-        @include pad {
-            display: block;
-            width: 100vw;
-        }
-    }
-
     .offcanvas-body {
         width: 100vw;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            width: 100%;
-        }
+        height: calc((812px - 148px)/812px)*100%;
     }
 
     .offcanvas-footer {
         width: 100vw;
-        padding: 12px;
-        border-top: 1px solid $white;
-    }
-
-    .menu-desktop {
-        display: flex;
-
-        @include pad {
-            display: none;
-        }
-
-        li {
-            padding: 28px 10px;
-        }
-    }
-
-    .society {
-        display: flex;
-        gap: 20px;
-        padding-top: 36px;
+        height: calc(148px/812px)*100%;
     }
 }

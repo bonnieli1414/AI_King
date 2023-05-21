@@ -1,0 +1,68 @@
+// 斷點(參考bootstrap5規格)
+$pad-breakpoints: 992px;
+$mobile-breakpoints: 767px; //ipad最小尺寸為768
+
+// 容器
+$pad-width: 960px;
+$mobile-width: 100%; //ipad最小尺寸為768
+
+// 客製RWD:平板尺寸
+@mixin pad {
+    @media screen and (max-width: $pad-breakpoints) {
+        @content;
+    }
+}
+
+// 客製RWD:手機尺寸
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoints) {
+        @content;
+    }
+}
+
+// 主色、輔色
+$black-1: #020202;
+$black-2: #1E1E1E;
+$black-3: #525252;
+$black-4: #919191;
+$black-5: #D1D1D1;
+$black-6: #F2F2F2;
+$white: #FFFFFF;
+$primary-color: #F18724;
+
+// 字體基本設定
+%base-font-family {
+    font-family: Microsoft JhengHei, Apple LiGothic, sans-serif;
+}
+
+%d-block {
+    display: block;
+}
+
+%d-none {
+    display: none;
+}
+
+%d-flex {
+    display: flex;
+}
+
+%flex-jcsb {
+    @extend %d-flex;
+    justify-content: space-between;
+}
+
+%flex-jcc {
+    @extend %d-flex;
+    justify-content: center;
+}
+
+%flex-flex-end {
+    @extend %d-flex;
+    justify-content: flex-end;
+}
+
+%flex-aic {
+    @extend %d-flex;
+    align-items: center;
+}

@@ -35,6 +35,12 @@ $primary-color: #F18724;
     font-family: Microsoft JhengHei, Apple LiGothic, sans-serif;
 }
 
+// 圖片置中
+%img-center {
+    display: block;
+    margin: 0 auto;
+}
+
 %d-block {
     display: block;
 }

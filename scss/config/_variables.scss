@@ -53,6 +53,11 @@ $primary-color: #F18724;
     display: flex;
 }
 
+%flex-wrap {
+    @extend %d-flex;
+    flex-wrap: wrap;
+}
+
 %flex-jcsb {
     @extend %d-flex;
     justify-content: space-between;

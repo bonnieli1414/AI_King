@@ -12,7 +12,7 @@
 <body>
     <!-- header開始 -->
     <header class="w-100 pos-fixed bg-black01" style="z-index: 9999;">
-        <div class="container flex-wrap flex-between pos-relative">
+        <div class="container flex-wrap flex-between flex-y-center pos-relative">
             <h1>
                 <a href="#" class="logo px-20">
                     AI工具王
@@ -108,17 +108,17 @@
                     </div>
                 </div>
                 <ul class="card-group mt-40">
-                    <li class="card px-40 py-80">
+                    <li class="card border-black03 px-40 py-80">
                         <img src="./images/section2/flash on.png" alt="快速">
                         <h3 class="mt-26">快速</h3>
                         <p class="mt-20">我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
                     </li>
-                    <li class="card px-40 py-80">
+                    <li class="card border-black03 px-40 py-80">
                         <img src="./images/section2/auto awesome.png" alt="靈活">
                         <h3 class="mt-26">靈活</h3>
                         <p class="mt-20">我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
                     </li>
-                    <li class="card px-40 py-80">
+                    <li class="card border-black03 px-40 py-80">
                         <img src="./images/section2/library add.png" alt="擴充">
                         <h3 class="mt-26">擴充</h3>
                         <p class="mt-20">我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
@@ -132,7 +132,7 @@
         <section class="mt-160">
             <div class="container flex-wrap">
                 <h3 class="h4-pad h6-mobile">來自合作夥伴</h3>
-                <ul class="gap-20 mt-80">
+                <ul class="overflow-hidden gap-20 mt-80">
                     <li>
                         <ul class="d-flex scroll-style">
                             <li class="ms-118"><img src="./images/section3/1.png"></li>
@@ -163,7 +163,7 @@
         <section class="mt-160">
             <div class="container flex-wrap">
                 <ul class="card-group">
-                    <li class="card p-40">
+                    <li class="card card-partner p-40">
                         <div class="card-img">
                             <span><img src="./images/section4/star.png"></span>
                             <span><img src="./images/section4/star.png"></span>
@@ -186,7 +186,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="card p-40">
+                    <li class="card card-partner p-40">
                         <div class="card-img">
                             <span><img src="./images/section4/star.png"></span>
                             <span><img src="./images/section4/star.png"></span>
@@ -209,7 +209,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="card p-40">
+                    <li class="card card-partner p-40">
                         <div class="card-img">
                             <span><img src="./images/section4/star.png"></span>
                             <span><img src="./images/section4/star.png"></span>
@@ -239,12 +239,12 @@
         <!-- 各單位區域結束 -->
 
         <!-- 各單位區域開始 -->
-        <section class="section5 bg-white text-color-black01 border-radius160 mt-160">
+        <section class="bg-white text-color-black01 border-radius160 mt-160">
             <div class="container flex-wrap flex-column pt-160 pb-160">
-                <h2 class="title title-bold-sm h1-pad h3-mobile text-mobile-center mb-80"><span
+                <h2 class="title title-bold-sm h1-pad h3-mobile text-center mb-80"><span
                         class="d-mobile-block">這些超酷的應用，</span><span>都來自 AI工具王</span></h2>
-                <div class="search-bar">
-                    <input type="text" placeholder="輸入關鍵字搜尋">
+                <div class="search-bar pos-relative">
+                    <input class="w-100 bg-black06 ps-76 py-20" type="text" placeholder="輸入關鍵字搜尋">
                     <div class="search"></div>
                 </div>
                 <ul class="navbar">
@@ -284,180 +284,96 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="card-group">
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/1.png" alt="Chatbot Builder">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Chatbot Builder</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>卡卡</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#聊天</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                <ul class="card-group card-ai mt-40">
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/2.png" alt="Image Recognition Platform">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Image Recognition Platform</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">專業的圖像識別平台，識別圖像、分類、標記等。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>杰杰</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#影像辨識</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/3.png" alt="Language Translation API">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Language Translation API</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>琪琪</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#翻譯</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/4.png" alt="Sentiment Analysis API">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Sentiment Analysis API</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>昊昊</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#行銷</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/5.png" alt="Fraud Detection Platform">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Fraud Detection Platform</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">預防詐騙活動，適用於銀行、金融、電商等。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>卡卡</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#客服</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
-                    <li class="card">
-                        <ul class="card-item">
-                            <li class="card-header">
-                                <img class="card-img" src="./images/section5/6.png" alt="Voice Assistant SDK">
-                            </li>
-                            <li class="card-text">
-                                <h6 class="pt-8">Voice Assistant SDK</h6>
-                            </li>
-                            <li class="card-text">
-                                <p class="p-md">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
-                            </li>
-                            <li>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p class="p-bold">AI 模型</p>
-                                    </li>
-                                    <li>
-                                        <p>杰杰</p>
-                                    </li>
-                                </ul>
-                                <ul class="card-footer">
-                                    <li>
-                                        <p>#生產力</p>
-                                    </li>
-                                    <li><img src="./images/icons/share.png"></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="card border-black06">
+                        <div class="card-img overflow-hidden">
+                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                        </div>
+                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
+                            <p class="p-bold">AI 模型</p>
+                            <p>卡卡</p>
+                        </div>
+                        <div class="d-flex flex-between px-32 py-20">
+                            <p>#聊天</p>
+                            <img src="./images/icons/share.png">
+                        </div>
                     </li>
                 </ul>
                 <ul class="pagination">
@@ -475,20 +391,20 @@
         <!-- 各單位區域結束 -->
 
         <!-- 各單位區域開始 -->
-        <section class="section6">
-            <div class="container">
-                <div class="h1 h2-pad h3-mobile">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></div>
+        <section>
+            <div class="container pt-80">
+                <div class="h1 h2-pad h3-mobile text-center mt-158">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></div>
                 <a class="slogan" href="#">
                     <h6>開始使用</h6>
                     <div class="call_made"></div>
                 </a>
                 <div class="border-white"></div>
-                <div class="flex-between">
-                    <ul class="py-80">
+                <div class="flex-between flex-mobile-column-reverse flex-mobile-left">
+                    <ul class="pt-40 pb-80">
                         <li class="title-sm h1-mobile"><a href="#">首頁</a></li>
                         <li class="title-sm h1-mobile"><a href="#">定價</a></li>
                     </ul>
-                    <a href="#" class="logo">
+                    <a href="#" class="logo pt-80 mb-40">
                         <img src="./images/header/Union.png">
                         <img src="./images/header/AI_tool_king.png" alt="AI工具王">
                     </a>
@@ -500,8 +416,8 @@
     </div>
     <!-- footer開始 -->
     <footer>
-        <div class="container flex-wrap flex-between flex-mobile-ais">
-            <div class="flex-between gap-100 d-mobile-block">
+        <div class="container flex-wrap flex-between flex-y-center flex-mobile-ais">
+            <div class="flex-between flex-y-center gap-100 d-mobile-block">
                 <div class="copyright pt-mobile-32 pb-mobile-4">AI工具王 © 2023</div>
                 <ul class="society d-flex gap-20">
                     <li><a class="py-32" href="#">Facebook</a></li>

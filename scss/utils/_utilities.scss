@@ -21,8 +21,7 @@
 }
 
 .flex-wrap {
-    @extend %d-flex;
-    flex-wrap: wrap;
+    @extend %flex-wrap;
 }
 
 .flex-column {
@@ -37,7 +36,22 @@
 
 .flex-between {
     @extend %flex-jcsb;
+}
+
+.flex-y-center {
     @extend %flex-aic;
+}
+
+.flex-mobile-column-reverse {
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+}
+
+.flex-mobile-left {
+    @include mobile {
+        align-items: start;
+    }
 }
 
 .flex-end {
@@ -93,12 +107,16 @@
     position: absolute;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .bg-black01 {
     background: $black-1;
 }
 
-.bg-black02 {
-    background: $black-2;
+.bg-black06 {
+    background: $black-6;
 }
 
 .bg-white {
@@ -115,8 +133,20 @@
     background-color: $white;
 }
 
+.border-bottom-black06 {
+    border-bottom: 1px solid $black-6;
+}
+
 .border-radius160 {
     border-radius: 160px;
+}
+
+.border-black03 {
+    border: 1px solid #525252;
+}
+
+.border-black06 {
+    border: 1px solid $black-6;
 }
 
 button {
@@ -129,6 +159,15 @@ button {
     padding: 20px 40px;
     border: 1px solid $white;
     border-radius: 16px;
+}
+
+input {
+    border-radius: 16px;
+    border: 1px solid $white;
+
+    &:focus {
+        @include input-focus;
+    }
 }
 
 .btn-dark {
@@ -153,12 +192,6 @@ button {
 
 .text-center {
     text-align: center;
-}
-
-.text-mobile-center {
-    @include mobile {
-        text-align: center;
-    }
 }
 
 .ms-16 {
@@ -201,8 +234,16 @@ button {
     margin-top: 120px;
 }
 
+.mt-158 {
+    margin-top: 158px;
+}
+
 .mt-160 {
     margin-top: 160px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 .mb-80 {
@@ -211,6 +252,10 @@ button {
 
 .p-40 {
     padding: 40px;
+}
+
+.ps-76 {
+    padding-left: 76px;
 }
 
 .pe-14 {
@@ -232,6 +277,11 @@ button {
     padding-right: 20px;
 }
 
+.px-32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 .px-40 {
     padding-left: 40px;
     padding-right: 40px;
@@ -241,16 +291,43 @@ button {
     padding-top: 8px;
 }
 
+.pt-12 {
+    padding-top: 12px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
 .pt-36 {
     padding-top: 36px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-80 {
+    padding-top: 80px;
 }
 
 .pt-160 {
     padding-top: 160px;
 }
 
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
 .pb-160 {
     padding-bottom: 160px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .py-28 {
@@ -266,6 +343,10 @@ button {
 .py-36 {
     padding-top: 36px;
     padding-bottom: 36px;
+}
+
+.pt-80 {
+    padding-top: 80px;
 }
 
 .py-80 {

@@ -147,12 +147,24 @@
     .card {
         width: 416px;
         margin: 0 auto;
-        border: 1px solid $black-3;
         border-radius: 16px;
 
         @include mobile {
             width: 100%;
             margin-top: 12px;
+        }
+    }
+
+    .card-img {
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+
+        img {
+            transition: transform 0.8s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

@@ -26,7 +26,6 @@
 
 .flex-column {
     flex-direction: column;
-
 }
 
 .flex-xy-center {
@@ -34,29 +33,16 @@
     @extend %flex-aic;
 }
 
-.flex-between {
-    @extend %flex-jcsb;
-}
-
 .flex-y-center {
     @extend %flex-aic;
 }
 
-.flex-mobile-column-reverse {
-    @include mobile {
-        flex-direction: column-reverse;
-    }
-}
-
-.flex-mobile-left {
-    @include mobile {
-        align-items: start;
-    }
+.flex-between {
+    @extend %flex-jcsb;
 }
 
 .flex-end {
     @extend %flex-end;
-    @extend %flex-aic;
 }
 
 .d-none {
@@ -84,6 +70,18 @@
 .d-mobile-block {
     @include mobile {
         display: block;
+    }
+}
+
+.flex-mobile-column-reverse {
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+}
+
+.flex-mobile-left {
+    @include mobile {
+        align-items: start;
     }
 }
 
@@ -123,6 +121,10 @@
     background: $white;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .text-color-black01 {
     color: $black-1;
 }
@@ -147,6 +149,12 @@
 
 .border-black06 {
     border: 1px solid $black-6;
+}
+
+.border-mobile-radius20 {
+    @include mobile {
+        border-radius: 20px;
+    }
 }
 
 button {
@@ -188,10 +196,6 @@ input {
         background: $black-2;
         color: $white;
     }
-}
-
-.text-center {
-    text-align: center;
 }
 
 .ms-16 {
@@ -248,10 +252,6 @@ input {
 
 .mb-80 {
     margin-bottom: 80px;
-}
-
-.p-40 {
-    padding: 40px;
 }
 
 .ps-76 {
@@ -318,9 +318,11 @@ input {
 .pb-20 {
     padding-bottom: 20px;
 }
+
 .pb-80 {
     padding-bottom: 80px;
 }
+
 .pb-160 {
     padding-bottom: 160px;
 }
@@ -345,18 +347,32 @@ input {
     padding-bottom: 36px;
 }
 
-.pt-80 {
-    padding-top: 80px;
-}
-
 .py-80 {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
+.p-40 {
+    padding: 40px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-100 {
+    gap: 100px;
+}
+
 .mb-mobile-24 {
     @include mobile {
         margin-bottom: 24px;
+    }
+}
+
+.mb-mobile-32 {
+    @include mobile {
+        margin-bottom: 32px;
     }
 }
 
@@ -366,16 +382,21 @@ input {
     }
 }
 
+.pt-mobile-80 {
+    @include mobile {
+        padding-top: 80px;
+    }
+}
+
+.px-mobile-20 {
+    @include mobile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .pb-mobile-4 {
     @include mobile {
         padding-bottom: 4px;
     }
-}
-
-.gap-20 {
-    gap: 20px;
-}
-
-.gap-100 {
-    gap: 100px;
 }

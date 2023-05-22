@@ -274,6 +274,10 @@ input {
     margin-bottom: 80px;
 }
 
+.mb-100 {
+    margin-bottom: 100px;
+}
+
 .ps-76 {
     padding-left: 76px;
 }
@@ -404,6 +408,12 @@ input {
 .mb-mobile-32 {
     @include mobile {
         margin-bottom: 32px;
+    }
+}
+
+.mb-mobile-180 {
+    @include mobile {
+        margin-bottom: 180px;
     }
 }
 

@@ -1131,6 +1131,10 @@ input:focus {
   margin-bottom: 80px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .ps-76 {
   padding-left: 76px;
 }
@@ -1261,6 +1265,12 @@ input:focus {
 @media screen and (max-width: 767px) {
   .mb-mobile-32 {
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mb-mobile-180 {
+    margin-bottom: 180px;
   }
 }
 

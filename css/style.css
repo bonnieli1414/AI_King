@@ -846,7 +846,7 @@ h6 {
   width: 416px;
   border-radius: 16px;
 }
-.card-group .card:hover img {
+.card-group .card:hover .card-img > img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

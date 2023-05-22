@@ -844,8 +844,11 @@ h6 {
 }
 .card-group .card {
   width: 416px;
-  margin: 0 auto;
   border-radius: 16px;
+}
+.card-group .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media screen and (max-width: 767px) {
   .card-group .card {
@@ -862,10 +865,6 @@ h6 {
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;
-}
-.card-group .card-img img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .container {
@@ -986,6 +985,10 @@ h6 {
   color: #020202;
 }
 
+.text-color-black04 {
+  color: #919191;
+}
+
 .border-white {
   width: 100%;
   height: 1px;
@@ -1072,12 +1075,24 @@ input:focus {
   margin-top: 4px;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
 
 .mt-22 {
   margin-top: 22px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-8 {
+  margin-top: 8px;
 }
 
 .mt-26 {
@@ -1102,6 +1117,10 @@ input:focus {
 
 .mt-160 {
   margin-top: 160px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-40 {
@@ -1185,6 +1204,11 @@ input:focus {
   padding-bottom: 160px;
 }
 
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1220,6 +1244,12 @@ input:focus {
 
 .gap-100 {
   gap: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .mt-pad-16 {
+    margin-top: 16px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1260,7 +1290,7 @@ input:focus {
 }
 
 header h1 {
-  text-indent: 100%;
+  text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -1417,17 +1447,41 @@ footer .to-top {
   -webkit-transform: translateY(-9px);
           transform: translateY(-9px);
 }
-.index .navbar {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 992px) {
+  .index .navbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index .navbar .order-filter {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+  }
+  .index .navbar .order-list {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .index .navbar .order-sort {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
 }
 .index .navbar button {
   border: 1px solid #F2F2F2;
@@ -1457,6 +1511,38 @@ footer .to-top {
   -webkit-mask-size: contain;
   mask-size: contain;
 }
+.index .navbar .filter:hover + .option-filter {
+  display: block;
+}
+.index .navbar .sort:hover + .option-sort {
+  display: block;
+}
+.index .navbar .option {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.index .navbar .option:hover {
+  display: block;
+}
+.index .navbar .option .option-item:hover {
+  color: #020202;
+  background-color: #F2F2F2;
+}
+.index .navbar .option-filter {
+  width: 240px;
+  top: 60px;
+  left: 0px;
+}
+.index .navbar .option-sort {
+  width: 144px;
+  top: 60px;
+  right: 0px;
+}
 .index .navbar .mask-filter {
   width: 10px;
   height: 10px;
@@ -1469,8 +1555,6 @@ footer .to-top {
 .index .navbar .mask-order {
   width: 10px;
   height: 10px;
-  width: 10px;
-  height: 10px;
   background-color: #020202;
   -webkit-mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
   mask: url("../images/icons/keyboard arrow down.png") no-repeat center center;
@@ -1481,11 +1565,6 @@ footer .to-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 992px) {
-  .index .navbar .list {
-    display: none;
-  }
 }
 .index .navbar .list a {
   padding: 8px 16px;
@@ -1518,11 +1597,11 @@ footer .to-top {
       flex-wrap: wrap;
 }
 .index .card-ai .card {
-  width: 30%;
+  width: 31%;
 }
 @media screen and (max-width: 992px) {
   .index .card-ai .card {
-    width: 45%;
+    width: 48%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1532,6 +1611,12 @@ footer .to-top {
 }
 .index .card-ai .card-img img {
   width: 100%;
+}
+.index .order-list .active {
+  color: #020202;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  border-radius: 16px;
 }
 .index .pagination {
   display: -webkit-box;
@@ -1545,12 +1630,16 @@ footer .to-top {
           align-items: center;
   margin-top: 40px;
 }
+.index .pagination .active {
+  color: #FFFFFF;
+  background: #020202;
+  border-radius: 16px;
+}
 .index .pagination a {
   width: 48px;
   height: 48px;
   line-height: 48px;
   text-align: center;
-  vertical-align: middle;
 }
 .index .pagination a:hover {
   color: #FFFFFF;
@@ -1558,8 +1647,8 @@ footer .to-top {
   border-radius: 16px;
 }
 .index .pagination a:hover .arrow-right {
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   background-color: #FFFFFF;
   -webkit-mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
   mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
@@ -1570,16 +1659,16 @@ footer .to-top {
   position: relative;
 }
 .index .pagination .arrow-right {
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   background-color: #020202;
   -webkit-mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
   mask: url("../images/icons/keyboard arrow right.png") no-repeat center center;
   -webkit-mask-size: contain;
   mask-size: contain;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 16px;
+  left: 16px;
 }
 .index .slogan {
   width: 188px;
@@ -1626,4 +1715,101 @@ footer .to-top {
 }
 .index .slogan img {
   margin-left: 16px;
+}
+
+@-webkit-keyframes arrow-first {
+  0% {
+    bottom: -100%;
+  }
+  45% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes arrow-first {
+  0% {
+    bottom: -100%;
+  }
+  45% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+@-webkit-keyframes arrow-second {
+  0% {
+    bottom: -100%;
+  }
+  65% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+@keyframes arrow-second {
+  0% {
+    bottom: -100%;
+  }
+  65% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+@-webkit-keyframes arrow-third {
+  0% {
+    bottom: -100%;
+  }
+  70% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+@keyframes arrow-third {
+  0% {
+    bottom: -100%;
+  }
+  70% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+.animation-left,
+.animation-right,
+.animation-middle {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.animation-right {
+  -webkit-animation-name: arrow-first;
+          animation-name: arrow-first;
+}
+
+.animation-middle {
+  -webkit-animation-name: arrow-second;
+          animation-name: arrow-second;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.animation-left {
+  -webkit-animation-name: arrow-third;
+          animation-name: arrow-third;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }

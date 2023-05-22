@@ -72,7 +72,7 @@
 // 針對h1標籤為圖片，設置隱藏文字，優化圖片SEO
 @mixin visual-hidden {
     // 首行縮排設滿
-    text-indent: 100%;
+    text-indent: 120%;
     // 不換行
     white-space: nowrap;
     // 超過後隱藏
@@ -146,8 +146,11 @@
 
     .card {
         width: 416px;
-        margin: 0 auto;
         border-radius: 16px;
+
+        &:hover img {
+            transform: scale(1.2);
+        }
 
         @include mobile {
             width: 100%;
@@ -161,10 +164,6 @@
 
         img {
             transition: transform 0.8s;
-
-            &:hover {
-                transform: scale(1.2);
-            }
         }
     }
 }

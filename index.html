@@ -65,6 +65,8 @@
         </div>
     </header>
     <!-- header結束 -->
+
+    <!-- 首頁部分開始 -->
     <div class="index">
         <!-- 各單位區域開始 -->
         <section class="pos-relative bg-black01" style="z-index: 99;">
@@ -102,9 +104,9 @@
                         <h3 class="h4-pad h6-mobile mb-mobile-24">我們的服務</h3>
                     </div>
                     <div class="flex-2">
-                        <div class="h1 h2-pad h3-mobile">我們相信透過 AI 技術，
+                        <p class="h1 h2-pad h3-mobile">我們相信透過 AI 技術，
                             包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <ul class="card-group mt-40">
@@ -247,16 +249,34 @@
                     <input class="w-100 bg-black06 ps-76 py-20" type="text" placeholder="輸入關鍵字搜尋">
                     <div class="search"></div>
                 </div>
-                <ul class="navbar">
-                    <li>
-                        <button class="filter btn-light"><span class="pe-14">篩選</span>
+                <ul class="navbar flex-between flex-y-center mt-24">
+                    <li class="order-filter pos-relative">
+                        <button class="filter btn-light">
+                            <span class="pe-14">篩選</span>
                             <div class="mask-filter"></div>
                         </button>
+                        <ul class="option option-filter bg-white py-20">
+                            <li class="option-item text-color-black04 px-40 py-8">AI 模型</li>
+                            <li class="option-item px-40 py-8">所有模型</li>
+                            <li class="option-item px-40 py-8">卡卡</li>
+                            <li class="option-item px-40 py-8">杰杰</li>
+                            <li class="option-item px-40 py-8">琪琪</li>
+                            <li class="option-item px-40 py-8">昊昊</li>
+                            <div class="border-black06 mt-16"></div>
+                            <li class="option-item text-color-black04 px-40 py-8">類型</li>
+                            <li class="option-item px-40 py-8">所有類型</li>
+                            <li class="option-item px-40 py-8">聊天</li>
+                            <li class="option-item px-40 py-8">影像辨識</li>
+                            <li class="option-item px-40 py-8">翻譯</li>
+                            <li class="option-item px-40 py-8">行銷</li>
+                            <li class="option-item px-40 py-8">客服</li>
+                            <li class="option-item px-40 py-8">生產力</li>
+                        </ul>
                     </li>
-                    <li>
-                        <ul class="list">
+                    <li class="order-list">
+                        <ul class="list mt-pad-16">
                             <li>
-                                <a href="#">全部</a>
+                                <a class="active" href="#">全部</a>
                             </li>
                             <li>
                                 <a href="#">聊天</a>
@@ -278,10 +298,15 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <button class="order btn-light"><span class="pe-14">由新到舊</span>
+                    <li class="order-sort pos-relative">
+                        <button class="sort btn-light">
+                            <span class="pe-14">由新到舊</span>
                             <div class="mask-order"></div>
                         </button>
+                        <ul class="option option-sort bg-white py-20">
+                            <li class="option-item px-40 py-8">由新到舊</li>
+                            <li class="option-item px-40 py-8">由舊到新</li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="card-group card-ai mt-40">
@@ -289,7 +314,7 @@
                         <div class="card-img overflow-hidden">
                             <img src="images/section5/1.png" alt="Chatbot Builder">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Chatbot Builder</h3>
                         <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
@@ -297,87 +322,87 @@
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
                             <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                     <li class="card border-black06">
                         <div class="card-img overflow-hidden">
-                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                            <img src="images/section5/2.png" alt="Image Recognition Platform">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Image Recognition Platform</h3>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">專業的圖像識別平台，識別圖像、分類、標記等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
-                            <p>卡卡</p>
+                            <p>杰杰</p>
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
-                            <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <p>#影像辨識</p>
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                     <li class="card border-black06">
                         <div class="card-img overflow-hidden">
-                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                            <img src="images/section5/3.png" alt="Language Translation API">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Language Translation API</h3>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
-                            <p>卡卡</p>
+                            <p>琪琪</p>
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
-                            <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <p>#翻譯</p>
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                     <li class="card border-black06">
                         <div class="card-img overflow-hidden">
-                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                            <img src="images/section5/4.png" alt="Sentiment Analysis API">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Sentiment Analysis API</h3>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
-                            <p>卡卡</p>
+                            <p>昊昊</p>
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
-                            <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <p>#行銷</p>
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                     <li class="card border-black06">
                         <div class="card-img overflow-hidden">
-                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                            <img src="images/section5/5.png" alt="Fraud Detection Platform">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Fraud Detection Platform</h3>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">預防詐騙活動，適用於銀行、金融、電商等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
                             <p>卡卡</p>
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
-                            <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <p>#客服</p>
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                     <li class="card border-black06">
                         <div class="card-img overflow-hidden">
-                            <img src="images/section5/1.png" alt="Chatbot Builder">
+                            <img src="images/section5/6.png" alt="Voice Assistant SDK">
                         </div>
-                        <h6 class="px-32 pt-20">Chatbot Builder</h6>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        <h3 class="fz-6 bold-900 px-32 pt-20">Voice Assistant SDK</h3>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
-                            <p>卡卡</p>
+                            <p>杰杰</p>
                         </div>
                         <div class="d-flex flex-between px-32 py-20">
-                            <p>#聊天</p>
-                            <img src="./images/icons/share.png">
+                            <p>#生產力</p>
+                            <a href="#"><img src="./images/icons/share.png"></a>
                         </div>
                     </li>
                 </ul>
                 <ul class="pagination">
-                    <li><a href="#">1</a></li>
+                    <li><a class="active" href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
@@ -393,7 +418,7 @@
         <!-- 各單位區域開始 -->
         <section>
             <div class="container pt-80">
-                <div class="h1 h2-pad h3-mobile text-center mt-158">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></div>
+                <h2 class="h1 h2-pad h3-mobile text-center mt-158">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></h2>
                 <a class="slogan" href="#">
                     <h6>開始使用</h6>
                     <div class="call_made"></div>
@@ -414,6 +439,8 @@
         </section>
         <!-- 各單位區域結束 -->
     </div>
+    <!-- 首頁部分結束 -->
+
     <!-- footer開始 -->
     <footer>
         <div class="container flex-wrap flex-between flex-y-center flex-mobile-ais">

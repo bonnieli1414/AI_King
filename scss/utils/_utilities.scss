@@ -129,6 +129,10 @@
     color: $black-1;
 }
 
+.text-color-black04 {
+    color: $black-4;
+}
+
 .border-white {
     width: 100%;
     height: 1px;
@@ -214,12 +218,24 @@ input {
     margin-top: 4px;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
 .mt-22 {
     margin-top: 22px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-8 {
+    margin-top: 8px;
 }
 
 .mt-26 {
@@ -244,6 +260,10 @@ input {
 
 .mt-160 {
     margin-top: 160px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .mb-40 {
@@ -327,6 +347,11 @@ input {
     padding-bottom: 160px;
 }
 
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -362,6 +387,12 @@ input {
 
 .gap-100 {
     gap: 100px;
+}
+
+.mt-pad-16 {
+    @include pad {
+        margin-top: 16px;
+    }
 }
 
 .mb-mobile-24 {

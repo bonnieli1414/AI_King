@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 工具王 - 產品優勢卡片設計</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 引入swiper套件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -135,25 +137,25 @@
             <div class="container flex-wrap">
                 <h3 class="h4-pad h6-mobile">來自合作夥伴</h3>
                 <ul class="overflow-hidden gap-20 mt-80">
-                    <li>
-                        <ul class="d-flex scroll-style">
-                            <li class="ms-118"><img src="./images/section3/1.png"></li>
-                            <li><img src="./images/section3/2.png"></li>
-                            <li><img src="./images/section3/3.png"></li>
-                            <li><img src="./images/section3/4.png"></li>
-                            <li><img src="./images/section3/5.png"></li>
-                            <li class="me-118"><img src="./images/section3/6.png"></li>
+                    <li class="swiper mySwiper">
+                        <ul class="swiper-wrapper partner">
+                            <li class="swiper-slide ms-118"><img src="images/section3/1.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/2.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/3.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/4.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/5.png"></li>
+                            <li class="swiper-slide me-118"><img src="./images/section3/6.png"></li>
                         </ul>
                     </li>
-                    <li>
-                        <ul class="d-flex scroll-style">
-                            <li><img src="./images/section3/7.png"></li>
-                            <li><img src="./images/section3/8.png"></li>
-                            <li><img src="./images/section3/9.png"></li>
-                            <li><img src="./images/section3/10.png"></li>
-                            <li><img src="./images/section3/11.png"></li>
-                            <li><img src="./images/section3/12.png"></li>
-                            <li><img src="./images/section3/7.png"></li>
+                    <li class="swiper mySwiper">
+                        <ul class="swiper-wrapper partner">
+                            <li class="swiper-slide"><img src="images/section3/7.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/8.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/9.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/10.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/11.png"></li>
+                            <li class="swiper-slide"><img src="./images/section3/12.png"></li>
+                            <li class="swiper-slide"><img src="images/section3/7.png"></li>
                         </ul>
                     </li>
                 </ul>
@@ -360,7 +362,8 @@
                             <img src="images/section5/4.png" alt="Sentiment Analysis API">
                         </div>
                         <h3 class="fz-6 bold-900 px-32 pt-20">Sentiment Analysis API</h3>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">
+                            自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
                             <p>昊昊</p>
@@ -390,7 +393,8 @@
                             <img src="images/section5/6.png" alt="Voice Assistant SDK">
                         </div>
                         <h3 class="fz-6 bold-900 px-32 pt-20">Voice Assistant SDK</h3>
-                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+                        <p class="p-md border-bottom-black06 px-32 pt-12 pb-20">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。
+                        </p>
                         <div class="d-flex flex-between border-bottom-black06 px-32 py-20">
                             <p class="p-bold">AI 模型</p>
                             <p>杰杰</p>
@@ -418,7 +422,8 @@
         <!-- 各單位區域開始 -->
         <section>
             <div class="container pt-80">
-                <h2 class="h1 h2-pad h3-mobile text-center mt-158">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span></h2>
+                <h2 class="h1 h2-pad h3-mobile text-center mt-158">現在就來建立<span class="d-mobile-block">屬於你的服務吧</span>
+                </h2>
                 <a class="slogan" href="#">
                     <h6>開始使用</h6>
                     <div class="call_made"></div>
@@ -457,7 +462,9 @@
     </footer>
     <!-- footer結束 -->
 
-    <!-- 引入js套件 -->
+    <!-- 引入swiper套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 引入jq套件 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>

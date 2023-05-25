@@ -1599,7 +1599,7 @@ footer .to-top {
     min-height: 144px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .index .card-comment {
     display: none;
   }
@@ -1607,10 +1607,13 @@ footer .to-top {
 .index .mySwiper-comment {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .index .mySwiper-comment {
     display: block;
   }
+}
+.index .swiper-pagination-bullet {
+  background: #525252;
 }
 .index .swiper-pagination-bullet-active {
   background: #FFFFFF;
